@@ -63,20 +63,14 @@
 <table id="tabelaProcessadores">
                 <thead>
                     <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th>Sistema de Gestão da Qualidade</th>
-                        <th></th>
-                        <th></th>
+                        <th colspan="7">Sistema de Gestão da Qualidade</th>        
                     </tr>
                 </thead>
                 <thead>
                         <tr>
                             <th>Áreas</th>
+                            <th> </th>
                             <th>Processos</th>
-                            <th></th>
                             <th>Nº(s)</th>
                             <th>Nome</th>
                             <th>Intervenientes</th>
@@ -85,132 +79,106 @@
                 </thead>
                 <tbody>
                         <tr>
-                            <td>A Desenvolver a estratégia</td>
-                            <td>A01<br>
-                            A02</td>
-                            <td>Modelo <br>
-                            Procedimento <br>
-                            Fluxograma</td>
-                            <td>NA<br>
-                            0<br>
-                            A01</td>
-                            <td>Planear a estratégia e as atividades</td>
-                            <td>Diretora / DP / Sandra Alfaiate / Gab. Comunicação </td>
-                            <td>Autonomia Financeira<br>
-                            Taxa de satisfação dos cursos</td>
-                        </tr>
-                </tbody>
-                <tbody>
-                        <tr>
-                            <td>B Disponibilizar recursos humanos competentes</td>
-                           <td>B01<br><br>
-                            B02 <br><br>
-                            B03 <br><br>
-                            B04 <br>
-                            <td>Modelo <br>Procedimento<br>Fluxograma<br><br>Modelo<br>Procedimento<br>Fluxograma<br>Modelo<br>
-                            Procedimento<br>
-                            Fluxograma<br><br>
-                            Modelo<br>
-                            Procedimento<br>
-                            Fluxograma<br></td>
-                            <td>021<br> <br>B01<br>041/DT4<br> <br>B02<br>
-                            DT11<br>NA<br>B03<br>
-                            NA<br><br>B04<br></td>
-
-                            <td>Recrutar e acolher novo colaborador<br><br>Desenvolver as competências dos colaboradores
-                            <br><br>Avaliar o desempenho dos colaboradores<br><br>Cessar vínculo com o colaborador</td>
-
-                            <td>Diretora / DP / Maria Faustino<br><br>Diretora / DP / Coord. Formação Adultos<br><br>Diretora / DP / Maria Faustino / Téc. Administrativo
-                            <br><br>Diretora / DP / Maria Faustino<br></td>
-
-                            <td>Avaliação de desempenho no 1º ano de contrato<br><br>Avaliação de desempenho no 1º ano de contrato<br><br>Taxa de avaliação de desempenho</td>
-                        </tr>
-                </tbody>
-                <tbody>
-                        <tr>
-                            <td>C Disponibilizar meios</td>
-                            <td>C01<br><br>C02<br><br>C03<br><br>C04<br><br>C05<br><br>C06</td>
-                            <td>Modelo<br>Procedimento<br>Fluxograma<br><br>
-                            Modelo<br>Procedimento<br>Fluxograma<br><br>
-                            Modelo<br>Procedimento<br>Fluxograma<br><br>
-                            Modelo<br>Procedimento<br>Fluxograma<br><br>
-                            Modelo<br>Procedimento<br>Fluxograma<br><br>
-                            Modelo<br>Procedimento<br>Fluxograma<br>
+                            <td rowspan="6">
+                                A Desenvolver a estratégia
                             </td>
-                            <td>teste</td>
-
-                            <td>Adquirir bens e Serviços<br><br>Disponibilizar meios via centro de recursos<br><br>Disponibilizar meios via serviços administrativos<br><br>Manter infraestrutura
-                            <br><br>Avaliar fornecedores<br><br>Gerir utilizadores</td>
-
-                            <td><br>Maria Faustino / Serv. Admin (Sales, Rui, Isabel, Ana Oliveira, Susana Cunha) / Sandra Alfaiate / Diretora<br><br>Isabel Garcia / Sandra Sales<br><br>Maria Faustino / Téc. Manutenção / Ana Oliveira / Susana Cunha / Sandra Sales / Vânia Pinheiro / Isabel Garcia
-                            <br><br>Téc. Manutenção / Téc. Informática<br><br>EQ / Sandra Sales / Téc. Manutenção / Téc. Informática / Álvaro Brito / Ana Oliveira / Mafalda Santos / Sandra Alfaiate / Susana Cunha / Maria Faustino / Vânia Pinheiro<br><br>
-                            Téc. Informática / Maria Faustino</td>
-
-                            <td>Avaliação de fornecedores<br>Taxa de devolução de materiais (Dentro do Prazo)<br>Média de Satisfação dos Serviços Administrativos
-                            <br>Taxa de resolução<br>Taxa de fornecedores críticos<br>Tempo médio de resposta<br></td>
+                            <td rowspan="3">A01</td>
+                            <td>Modelo</td>
+                            <td>NA</td>
+                            <td rowspan="3">Planear a estratégia e as atividades</td>
+                            <td rowspan="3">Diretora / DP / Sandra Alfaiate / Gab. Comunicação</td>
+                            <td>Autonomia Financeira</td>
+                        </tr>
+                        <tr>
+                            <td>Procedimento</td>
+                            <td></td>
+                            <td rowspan="2">Taxa de satisfação dos cursos</td>
+                        </tr>
+                        <tr>
+                            <td>Fluxograma</td>
+                            <td>A01</td>
+                        </tr>
+                        <!--- Fim do A01 !-->
+                        <tr>
+                            <td rowspan="3">A02</td>
+                            <td>Modelo</td>
+                            <td>023</td>
+                            <td rowspan="3">Analisar a realização das atividades</td>
+                            <td rowspan="3">Equipa Qualidade / Diretora / DP / Sandra Alfaiate / Gab. Comunicação</td>
+                            <td rowspan="3">Taxa de execução do Plano de Ação</td>
+                        </tr>
+                        <tr>
+                            <td>Procedimento</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Fluxograma</td>
+                            <td>A02</td>
                         </tr>
                 </tbody>
+                <!--- Inicio do B --->
                 <tbody>
-                        <tr>
-                            <td>D Gerir a comunicação e divulgação</td>
-                            <td></td>
-                            <td></td>
-                            <td>o</td>
-                            <td></td>
-                            <td><td>
-                        </tr>
-                </tbody>
-                <tbody>
-                        <tr>
-                            <td>E Melhorar</td>
-                            <td></td>
-                            <td></td>
-                            <td>o</td>
-                            <td></td>
-                            <td><td>
-                        </tr>
-                </tbody>
-                <tbody>
-                        <tr>
-                            <td>F Formar jovens - cursos profissionais</td>
-                            <td></td>
-                            <td></td>
-                            <td>o</td>
-                            <td></td>
-                            <td><td>
-                        </tr>
-                </tbody>
-                <tbody>
-                        <tr>
-                            <td>G Formar adultos</td>
-                            <td></td>
-                            <td></td>
-                            <td>o</td>
-                            <td></td>
-                            <td><td>
-                        </tr>
-                </tbody>
-                <tbody>
-                        <tr>
-                            <td>H Vender produtos e serviços</td>
-                            <td></td>
-                            <td></td>
-                            <td>o</td>
-                            <td></td>
-                            <td><td>
-                        </tr>
-                </tbody>
-                <tbody>
-                        <tr>
-                            <td>I Processar os recebimentos e pagamentos</td>
-                            <td></td>
-                            <td></td>
-                            <td>o</td>
-                            <td></td>
-                            <td><td>
-                        </tr>
+                    <tr>
+                        <td rowspan="11">B Disponibilizar recursos humanos competentes</td>
+                        <td rowspan="3">B01</td>
+                        <td>Modelo</td>
+                        <td>021</td>
+                        <td rowspan="3">Recrutar e acolher novo colaborador</td>
+                        <td rowspan="3">Diretora / DP / Maria Faustino</td>
+                        <td rowspan="3">Avaliação de desempenho no 1º ano de contrato</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>B01</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">B02</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>041/DT4</td>
+                        <td rowspan="4">Desenvolver as competências dos colaboradores</td>
+                        <td rowspan="4">Diretora / DP / Coord. Formação Adultos</td>
+                        <td rowspan="4">Taxa de eficácia de formações internas</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>B02</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">B03</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>DT11</td>
+                        <td rowspan="4">Avaliar o desempenho dos colaboradores</td>
+                        <td rowspan="4">Diretora / DP / Maria Faustino / Téc. Administrativo</td>
+                        <td>Taxa de avaliação de desempenho</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td style="background-color:gray; color:white;">NA</td>
+                        <td>Avaliação de desempenho dos Funcionários Internos</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>B03</td>
+                        <td>Avaliação de desempenho dos Funcionários Externos</td>
+                    </tr>
                 </tbody>
             </table>
+
+            <div class="footer">
+            <img src="imagens/barra de logos.png" alt="barra de logos" class="barradelogos"/>
+            </div>
 
 <!-- Script's -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -222,6 +190,7 @@
       $('#tabelaHistorico').DataTable();
    } );
 </script>
+
 <!-- Fim dos Script's-->
     </body>
 </html>

@@ -77,3 +77,8 @@ nav{
     color: rgb(226, 226, 226);
     margin: 5px;
 }
+.footer{
+    margin-top: 25px;
+    background-color: #007bff;
+    height: 85px;
+}
