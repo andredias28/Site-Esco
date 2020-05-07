@@ -1,0 +1,35 @@
+.tabela{
+    margin: 10px 0px 10px 0px;
+}
+.tabela label{
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+.tabela input{
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.button{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5f9ea0;
+    border:none;
+    border-radius: 5px;
+}
+form{
+    width: 45%;
+    margin: 50px auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+}
+#buttons{
+    margin-left: 750px;
+}
