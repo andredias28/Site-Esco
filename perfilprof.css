@@ -1,0 +1,46 @@
+.imagem{
+    text-align: center;
+    height: 300px;
+    padding: 40px;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.userName{
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+#buttons{
+    margin-left: 1000px;
+
+}
+.tabela{
+    margin: 10px 0px 10px 0px;
+}
+.tabela label{
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+.tabela input{
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+form{
+    width: 45%;
+    margin: 20px auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+}
+#altera{
+    margin-left: 420px;
+}
