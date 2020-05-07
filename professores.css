@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Texto{
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    opacity: 0.95;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+th{
+    background: #a70000;
+    color: white;
+}
+
+tr:nth-child(even){
+    background: #e8e8e8;
+}
+tr:nth-child(odd){
+    background: white;
+}
+
+th, td{
+    text-align: center;
+    padding: 10px;
+
+}
+
+.tabela input{
+    height: 30px;
+    width: 94%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: auto;
+    
+}
+
+.button{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border:none;
+    border-radius: 5px;
+}
+form{
+    width: 45%;
+    margin: 50px auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+}
+
+button{
+    margin-top: 5px;
+}
+
+#buttons{
+    margin-left: 700px;
+}
