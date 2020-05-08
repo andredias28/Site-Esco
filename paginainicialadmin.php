@@ -77,6 +77,7 @@
                         </tr>
                 </thead>
                 <tbody>
+<!-- Inicio do A -->
                         <tr>
                             <td rowspan="6">
                                 A Desenvolver a estratégia
@@ -115,7 +116,8 @@
                             <td>A02</td>
                         </tr>
                 </tbody>
-                <!--- Inicio do B --->
+<!-- Fim do A -->
+<!--- Inicio do B --->
                 <tbody>
                     <tr>
                         <td rowspan="15">B Disponibilizar recursos humanos competentes</td>
@@ -191,7 +193,10 @@
                         <td>B03</td>
                     </tr>
                 </tbody>
-                <tr>
+<!--- Fim do B -->
+<!--- Inicio do C -->
+                <tbody>
+                    <tr>
                         <td rowspan="23">C Disponibilizar meios</td>
                         <td rowspan="3">C01</td>
                         <td>Modelo</td>
@@ -297,51 +302,52 @@
                     </tr>
                     <tr>
                         <td>Fluxograma</td>
-                        <td>B03</td>
+                        <td>C06</td>
                     </tr>
-                <tbody>
-                <tbody>
                 </tbody>
-                  <tr>
-                            <td rowspan="6">
-                             D Gerir a comunicação e divulgação
-                            </td>
-                            <td rowspan="3">D01</td>
-                            <td>Modelo</td>
-                            <td>009 / 034 / 035</td>
-                            <td rowspan="3">Divulgar conteúdos</td>
-                            <td rowspan="3">Gabinete Comunicação  (Ana Oliveira) / Diretora</td>
-                            <td>Nº de notícias produzidas: > 12/ano</td>
-                        </tr>
-                        <tr>
-                            <td>Procedimento</td>
-                            <td>8</td>
-                            <td>Nº artigos publicados no site: >  12/Ano</td>
-                        </tr>
-                        <tr>
-                            <td>Fluxograma</td>
-                            <td>D01</td>
-                            <td>Nº presenças em eventos de divulgação institucional e da oferta formativa (jovens e adultos): > 8/ ano</td>
-                        </tr>
-                        <!--- Fim do D01 !-->
-                        <tr>
-                            <td rowspan="3">D02</td>
-                            <td>Modelo</td>
-                            <td>006</td>
-                            <td rowspan="3">Gerir a Documentação do SGQ</td>
-                            <td rowspan="3">Equipa Qualidade / Diretora / Téc. Informática</td>
-                            <td rowspan="3">Idade média dos documentos</td>
-                        </tr>
-                        <tr>
-                            <td>Procedimento</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Fluxograma</td>
-                            <td>D02</td>
-                        </tr>
-                </tbdoy>
+<!-- Fim do C -->
+<!-- Inicio do D -->
                 <tbody>
+                    <tr>
+                        <td rowspan="6">D Gerir a comunicação e divulgação</td>
+                        <td rowspan="3">D01</td>
+                        <td>Modelo</td>
+                        <td>009 / 034 / 035</td>
+                        <td rowspan="3">Divulgar conteúdos</td>
+                        <td rowspan="3">Gabinete Comunicação  (Ana Oliveira) / Diretora</td>
+                        <td>Nº de notícias produzidas: > 12/ano</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>8</td>
+                        <td>Nº artigos publicados no site: >  12/Ano</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>D01</td>
+                        <td>Nº presenças em eventos de divulgação institucional e da oferta formativa (jovens e adultos): > 8/ ano</td>
+                    </tr>
+                    <!--- Fim do D01 !-->
+                    <tr>
+                        <td rowspan="3">D02</td>
+                        <td>Modelo</td>
+                        <td>006</td>
+                        <td rowspan="3">Gerir a Documentação do SGQ</td>
+                        <td rowspan="3">Equipa Qualidade / Diretora / Téc. Informática</td>
+                        <td rowspan="3">Idade média dos documentos</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>D02</td>
+                    </tr>
+            </tbdoy>
+<!-- Fim do D -->
+<!-- Inicio do E -->
+            <tbody>
                     <tr>
                         <td rowspan="15">E Melhorar</td>
                         <td rowspan="3">E01</td>
@@ -415,6 +421,241 @@
                         <td>E04</td>
                     </tr>
                 </tbody>
+<!-- Fim do E -->
+<!-- Inicio do F -->
+                <tbody>
+                    <tr>
+                        <td rowspan="15">F Formar jovens - cursos profissionais</td>
+                        <td rowspan="3">F01</td>
+                        <td>Modelo</td>
+                        <td>018/019/020/025/026</td>
+                        <td rowspan="3">Planear a Formação de jovens</td>
+                        <td rowspan="3">DP / Diretora / Sandra Alfaiate / EEE / CC's / Marta Malhado</td>
+                        <td rowspan="3">Taxa de Aprovação de 100% dos cursos propostos</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>2 / 6</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>F01</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">F02</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>025/026</td>
+                        <td rowspan="4">Selecionar novos alunos</td>
+                        <td rowspan="4">SPO / DP / Diretora / Isabel Garcia</td>
+                        <td rowspan="4">Taxa de Ocupação das turmas de 1º Ano (28 alunos/Turma)</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>2/6</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>F02</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">F03</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>022</td>
+                        <td rowspan="4">Desenvolver  Formação de Jovens</td>
+                        <td rowspan="4">DP / Marta Malhado / EQ / DT's / Margarida Caldeira / Sandra Franco</td>
+                        <td>Taxa de Abandono</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>2</td>
+                        <td>Taxa de Empregabilidade + Empregabilidade na área</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>F03</td>
+                        <td>Taxa de Conclusão</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">F04</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>008/017/025/028/036/ 037/039</td>
+                        <td rowspan="4">Apoiar o aluno</td>
+                        <td rowspan="4">DTs / GAE / GAAF (Filipa Correia) / ESS / GPES / SPO</td>
+                        <td rowspan="4">Tempo de resposta para avaliar e responder às sinalizações</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>3/4/6/7</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>F04</td>
+                    </tr>
+                </tbody>
+<!-- Fim do F -->
+<!-- Inicio do G -->
+                <tbody>
+                    <tr>
+                        <td rowspan="15">G Formar adultos</td>
+                        <td rowspan="3">G01</td>
+                        <td>Modelo</td>
+                        <td>NA</td>
+                        <td rowspan="3">Planear formação de adultos</td>
+                        <td rowspan="3">Coord. Formação Adultos / Susana Cunha / Ana Cunha / EEE / Sandra Alfaiate / Diretora / DP</td>
+                        <td rowspan="3">Taxa de realização</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>G01</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">G02</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>NA</td>
+                        <td rowspan="4">Processar inscrições</td>
+                        <td rowspan="4">Susana Cunha / Téc. Administrativa (Ana Cunha)</td>
+                        <td rowspan="4">Taxa de processamento das fichas de inscrição</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>G02</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">G03</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>030 / 031 / 032 / 033</td>
+                        <td rowspan="4">Preparar, planear e desenvolver a formação de adultos</td>
+                        <td rowspan="4">Coord. Formação Adultos / Sandra Alfaiate / Susana Cunha / Ana Cunha / Maria Faustino</td>
+                        <td>Média de Satisfação - Formação Pós-Laboral</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>1</td>
+                        <td rowspan="2">Taxa de aprovação de candidaturas financiadas</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>G03</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">G04</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>031</td>
+                        <td rowspan="4">Formação para empresas – não co-financiada</td>
+                        <td rowspan="4">Coord. Formação Adultos / Sandra Sales / Ana Cunha / Susana Cunha / Sandra Alfaiate</td>
+                        <td rowspan="4">Média de Satisfação - Formação Empresarial</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>G04</td>
+                    </tr>
+                </tbody>
+<!-- Fim do G -->
+<!-- Inicio do H -->
+                <tbody>
+                    <tr>
+                        <td rowspan="6">H Vender produtos e serviços</td>
+                        <td rowspan="3">H01</td>
+                        <td>Modelo</td>
+                        <td>012</td>
+                        <td rowspan="3">Vender produtos reprografia</td>
+                        <td rowspan="3">Susana Cunha / Ana Cunha / Vânia Pinheiro / Ana Oliveira / Isabel Garcia / Sandra Sales</td>
+                        <td rowspan="3">Média de Satisfação Reprografia</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>H01</td>
+                    </tr>
+                    <!--- Fim do H01 -->
+                    <!-- Inicio do H02 -->
+                    <tr>
+                        <td rowspan="3">H02</td>
+                        <td>Modelo</td>
+                        <td>NA</td>
+                        <td rowspan="3">Aluguer de espaço</td>
+                        <td rowspan="3">Susana Cunha / Sandra Sales / Diretora</td>
+                        <td rowspan="3">Média de Satisfação</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>H02</td>
+                    </tr>
+                    <!--- Fim do H02 -->
+                </tbdoy>                                   
+<!--- Fim do H -->
+<!-- Inicio do I -->
+                <tbody>
+                   <tr>
+                        <td rowspan="6">I Processar os recebimentos e pagamentos</td>
+                        <td rowspan="3">I01</td>
+                        <td>Modelo</td>
+                        <td>NA</td>
+                        <td rowspan="3">Processar recebimento de clientes</td>
+                        <td rowspan="3">Susana Cunha / Téc. Manutenção / Ana Oliveira / Luís Couto</td>
+                        <td rowspan="3">Taxa de Envio do SAFT (12/Mês)</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>I01</td>
+                    </tr>
+                    <!--- Fim do I01 !-->
+                    <!--- Inicio do I02 -->
+                    <tr>
+                        <td rowspan="3">I02</td>
+                        <td>Modelo</td>
+                        <td>NA</td>
+                        <td rowspan="3">Processar vencimentos</td>
+                        <td rowspan="3">Maria Faustino / Luís Couto</td>
+                        <td rowspan="3">Taxa de Envio do DMR (10/Mês)</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>I02</td>
+                    </tr>
+                    <!--- Fim do I02 -->
+                </tbdoy>
+<!--- Fim do I -->
+                
             </table>
             <div class="footer">
             <img src="imagens/barra de logos.png" alt="barra de logos" class="barradelogos"/>
