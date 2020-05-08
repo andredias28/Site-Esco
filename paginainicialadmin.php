@@ -49,13 +49,13 @@
             <li class="nav-item">
                  <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
              </li>
-            </ul>
-            <li class="nav-item">
+             <li class="nav-item">
                 <div id="botao">
                     <a href="perfil.php"><button id="perfil" class="btn btn-outline-light">Perfil</button></a>
                     <a href="index.html"><button id="termina" class="btn btn-danger">Terminar-Sessão</button></a>
                 </div>           
              </li>
+            </ul>
         </div>
     </nav>
 <!-- Fim da NavBar -->
