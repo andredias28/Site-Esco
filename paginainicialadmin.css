@@ -70,11 +70,18 @@ nav{
     color: rgb(226, 226, 226);
     margin: 5px;
 }
-.footer{
-    margin-top: 25px;
-    background-color: #007bff;
-    height: 85px;
+
+.footer,
+.push {
+  height: 85px;
+  margin-top: 25px;
+  background-color: #1E90FF;
 }
+/* .footer{
+    margin-top: 25px;
+    background-color: #1E90FF;
+    height: 85px;
+} */
 
 table{
     border: 1px solid black;

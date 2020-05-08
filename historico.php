@@ -99,6 +99,9 @@
                 </tbody>
             </table>
 <!-- Fim da tabela -->
+          <div class="footer">
+            <img src="imagens/barra de logos.png" alt="barra de logos" class="barradelogos"/>
+            </div>
 
 <!-- Script's -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
