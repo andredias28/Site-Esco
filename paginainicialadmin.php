@@ -84,7 +84,7 @@
                             </td>
                             <td rowspan="3">A01</td>
                             <td>Modelo</td>
-                            <td>NA</td>
+                            <td style="background-color:gray; color:white;">NA</td>
                             <td rowspan="3">Planear a estratégia e as atividades</td>
                             <td rowspan="3">Diretora / DP / Sandra Alfaiate / Gab. Comunicação</td>
                             <td>Autonomia Financeira</td>
@@ -218,7 +218,7 @@
                     </tr>
                     <tr>
                         <td>Modelo</td>
-                        <td>041/DT4</td>
+                        <td>010</td>
                         <td rowspan="4">Disponibilizar meios via centro de recursos</td>
                         <td rowspan="4">Isabel Garcia / Sandra Sales</td>
                         <td rowspan="2">Taxa de devolução de materiais (Dentro do Prazo)</td>
@@ -229,7 +229,7 @@
                     </tr>
                     <tr>
                         <td>Fluxograma</td>
-                        <td>B02</td>
+                        <td>C02</td>
                         <td rowspan="2">Taxa de satisfação de requisições</td>
                     </tr>
                     <tr>
@@ -237,61 +237,61 @@
                     </tr>
                     <tr>
                         <td>Modelo</td>
-                        <td>DT11</td>
+                        <td>011/012/013/014/040</td>
                         <td rowspan="4">Disponibilizar meios via serviços administrativos</td>
                         <td rowspan="4">Maria Faustino / Téc. Manutenção / Ana Oliveira / Susana Cunha / Sandra Sales / Vânia Pinheiro / Isabel Garcia</td>
                         <td rowspan="4">Média de Satisfação dos Serviços Administrativos</td>
                     </tr>
                     <tr>
                         <td>Procedimento</td>
-                        <td style="background-color:gray; color:white;">NA</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Fluxograma</td>
-                        <td>B03</td>
+                        <td>C03</td>
                     </tr>
                     <tr>
                         <td rowspan="4">C04</td>
                     </tr>
                     <tr>
                         <td>Modelo</td>
-                        <td>DT11</td>
+                        <td>DT5/042</td>
                         <td rowspan="4">Manter infraestrutura</td>
                         <td rowspan="4">Téc. Manutenção / Téc. Informática</td>
                         <td rowspan="4">Taxa de resolução</td>
                     </tr>
                     <tr>
                         <td>Procedimento</td>
-                        <td style="background-color:gray; color:white;">NA</td>
+                        <td>Pr.12</td>
                     </tr>
                     <tr>
                         <td>Fluxograma</td>
-                        <td>B03</td>
+                        <td>C04</td>
                     </tr>
                     <tr>
                         <td rowspan="4">C05</td>
                     </tr>
                     <tr>
                         <td>Modelo</td>
-                        <td>DT11</td>
+                        <td>005</td>
                         <td rowspan="4">Avaliar fornecedores</td>
                         <td rowspan="4">EQ / Sandra Sales / Téc. Manutenção / Téc. Informática / Álvaro Brito / Ana Oliveira / Mafalda Santos / Sandra Alfaiate / Susana Cunha / Maria Faustino / Vânia Pinheiro</td>
                         <td rowspan="4">Taxa de fornecedores críticos</td>
                     </tr>
                     <tr>
                         <td>Procedimento</td>
-                        <td style="background-color:gray; color:white;">NA</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Fluxograma</td>
-                        <td>B03</td>
+                        <td>C05</td>
                     </tr>
                     <tr>
                         <td rowspan="4">C06</td>
                     </tr>
                     <tr>
                         <td>Modelo</td>
-                        <td>DT11</td>
+                        <td style="background-color:gray; color:white;">NA</td>
                         <td rowspan="4">Gerir utilizadores</td>
                         <td rowspan="4">Téc. Informática / Maria Faustino</td>
                         <td rowspan="4">Tempo médio de resposta</td>
@@ -338,7 +338,7 @@
                     </tr>
                     <tr>
                         <td>Procedimento</td>
-                        <td></td>
+                        <td style="background-color:gray; color:white;"></td>
                     </tr>
                     <tr>
                         <td>Fluxograma</td>
@@ -359,7 +359,7 @@
                     </tr>
                     <tr>
                         <td>Procedimento</td>
-                        <td>NA</td>
+                        <td style="background-color:gray; color:white;">NA</td>
                     </tr>
                     <tr>
                         <td>Fluxograma</td>
@@ -377,7 +377,7 @@
                     </tr>
                     <tr>
                         <td>Procedimento</td>
-                        <td>NA</td>
+                        <td style="background-color:gray; color:white;">NA</td>
                         <td rowspan="2">Tempo médio para análise de NC</td>
                     </tr>
                     <tr>
@@ -523,7 +523,7 @@
                     </tr>
                     <tr>
                         <td>Modelo</td>
-                        <td>NA</td>
+                        <td style="background-color:gray; color:white;">NA</td>
                         <td rowspan="4">Processar inscrições</td>
                         <td rowspan="4">Susana Cunha / Téc. Administrativa (Ana Cunha)</td>
                         <td rowspan="4">Taxa de processamento das fichas de inscrição</td>
@@ -588,7 +588,7 @@
                     </tr>
                     <tr>
                         <td>Procedimento</td>
-                        <td>NA</td>
+                        <td style="background-color:gray; color:white;">NA</td>
                     </tr>
                     <tr>
                         <td>Fluxograma</td>
@@ -599,14 +599,14 @@
                     <tr>
                         <td rowspan="3">H02</td>
                         <td>Modelo</td>
-                        <td>NA</td>
+                        <td style="background-color:gray; color:white;">NA</td>
                         <td rowspan="3">Aluguer de espaço</td>
                         <td rowspan="3">Susana Cunha / Sandra Sales / Diretora</td>
                         <td rowspan="3">Média de Satisfação</td>
                     </tr>
                     <tr>
                         <td>Procedimento</td>
-                        <td>NA</td>
+                        <td style="background-color:gray; color:white;">NA</td>
                     </tr>
                     <tr>
                         <td>Fluxograma</td>
@@ -621,7 +621,7 @@
                         <td rowspan="6">I Processar os recebimentos e pagamentos</td>
                         <td rowspan="3">I01</td>
                         <td>Modelo</td>
-                        <td>NA</td>
+                        <td style="background-color:gray; color:white;">NA</td>
                         <td rowspan="3">Processar recebimento de clientes</td>
                         <td rowspan="3">Susana Cunha / Téc. Manutenção / Ana Oliveira / Luís Couto</td>
                         <td rowspan="3">Taxa de Envio do SAFT (12/Mês)</td>
@@ -639,7 +639,7 @@
                     <tr>
                         <td rowspan="3">I02</td>
                         <td>Modelo</td>
-                        <td>NA</td>
+                        <td style="background-color:gray; color:white;">NA</td>
                         <td rowspan="3">Processar vencimentos</td>
                         <td rowspan="3">Maria Faustino / Luís Couto</td>
                         <td rowspan="3">Taxa de Envio do DMR (10/Mês)</td>
