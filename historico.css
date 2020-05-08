@@ -87,8 +87,9 @@ th, td{
     border-radius: 5px;
 }
 #buttons{
-  margin-left: 750px;
-
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 #inserir{
     float: right;
@@ -378,12 +379,12 @@ th, td{
   }
   .dataTables_wrapper .dataTables_length {
     float: right;
-    margin-right: 80px;
+    margin-right: 270px;
     margin-top: 20px;
   }
   .dataTables_wrapper .dataTables_filter {
     float: left;
-    margin-left: 80px;
+    margin-left: 270px;
     margin-top: 20px;
     text-align: right;
   }
@@ -393,13 +394,13 @@ th, td{
   .dataTables_wrapper .dataTables_info {
     clear: both;
     float: left;
-    margin-left: 80px;
+    margin-left: 270px;
     padding-top: 0.755em;
   }
   .dataTables_wrapper .dataTables_paginate {
     float: right;
     text-align: right;
-    margin-right: 80px;
+    margin-right: 270px;
     padding-top: 0.25em;
   }
   .dataTables_wrapper .dataTables_paginate .paginate_button {

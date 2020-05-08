@@ -1,6 +1,7 @@
 #botao{
-    margin-left: 1000px;
-
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 .tabela{
     margin: 10px 0px 10px 0px;
