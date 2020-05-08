@@ -45,11 +45,11 @@ table{
     opacity: 0.95;
     margin-top: 25px;
     margin-left: 90px;
-    width: 85%;
+    width: 90%;
 }
 
 th{
-    background: #a70000;
+    background: #007bff;
     color: white;
 }
 

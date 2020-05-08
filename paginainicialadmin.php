@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="paginainicialadmin.css">
-    <link rel="stylesheet" href="historico.css">
     <title>SiteEsco</title>
 </head>
     <body>
@@ -119,7 +118,7 @@
                 <!--- Inicio do B --->
                 <tbody>
                     <tr>
-                        <td rowspan="11">B Disponibilizar recursos humanos competentes</td>
+                        <td rowspan="15">B Disponibilizar recursos humanos competentes</td>
                         <td rowspan="3">B01</td>
                         <td>Modelo</td>
                         <td>021</td>
@@ -173,9 +172,176 @@
                         <td>B03</td>
                         <td>Avaliação de desempenho dos Funcionários Externos</td>
                     </tr>
+                    <tr>
+                        <td rowspan="4">B04</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>DT11</td>
+                        <td rowspan="4">Avaliar o desempenho dos colaboradores</td>
+                        <td rowspan="4">Diretora / DP / Maria Faustino / Téc. Administrativo</td>
+                        <td rowspan="4">Taxa de desvinculações</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td style="background-color:gray; color:white;">NA</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>B03</td>
+                    </tr>
                 </tbody>
+                <tr>
+                        <td rowspan="23">C Disponibilizar meios</td>
+                        <td rowspan="3">C01</td>
+                        <td>Modelo</td>
+                        <td>012</td>
+                        <td rowspan="3">Recrutar e acolher novo colaborador</td>
+                        <td rowspan="3">Maria Faustino / Serv. Admin (Sales, Rui, Isabel, Ana Oliveira, Susana Cunha) / Sandra Alfaiate / Diretora</td>
+                        <td rowspan="3">Avaliação de fornecedores</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>C01</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">C02</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>041/DT4</td>
+                        <td rowspan="4">Disponibilizar meios via centro de recursos</td>
+                        <td rowspan="4">Isabel Garcia / Sandra Sales</td>
+                        <td rowspan="2">Taxa de devolução de materiais (Dentro do Prazo)</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>B02</td>
+                        <td rowspan="2">Taxa de satisfação de requisições</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">C03</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>DT11</td>
+                        <td rowspan="4">Disponibilizar meios via serviços administrativos</td>
+                        <td rowspan="4">Maria Faustino / Téc. Manutenção / Ana Oliveira / Susana Cunha / Sandra Sales / Vânia Pinheiro / Isabel Garcia</td>
+                        <td rowspan="4">Média de Satisfação dos Serviços Administrativos</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td style="background-color:gray; color:white;">NA</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>B03</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">C04</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>DT11</td>
+                        <td rowspan="4">Manter infraestrutura</td>
+                        <td rowspan="4">Téc. Manutenção / Téc. Informática</td>
+                        <td rowspan="4">Taxa de resolução</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td style="background-color:gray; color:white;">NA</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>B03</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">C05</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>DT11</td>
+                        <td rowspan="4">Avaliar fornecedores</td>
+                        <td rowspan="4">EQ / Sandra Sales / Téc. Manutenção / Téc. Informática / Álvaro Brito / Ana Oliveira / Mafalda Santos / Sandra Alfaiate / Susana Cunha / Maria Faustino / Vânia Pinheiro</td>
+                        <td rowspan="4">Taxa de fornecedores críticos</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td style="background-color:gray; color:white;">NA</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>B03</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">C06</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>DT11</td>
+                        <td rowspan="4">Gerir utilizadores</td>
+                        <td rowspan="4">Téc. Informática / Maria Faustino</td>
+                        <td rowspan="4">Tempo médio de resposta</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td style="background-color:gray; color:white;">NA</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>B03</td>
+                    </tr>
+                <tbody>
+                <tbody>
+                </tbody>
+                <tr>
+                            <td rowspan="6">
+                             D Gerir a comunicação e divulgação
+                            </td>
+                            <td rowspan="3">D01</td>
+                            <td>Modelo</td>
+                            <td>009 / 034 / 035</td>
+                            <td rowspan="3">Divulgar conteúdos</td>
+                            <td rowspan="3">Gabinete Comunicação  (Ana Oliveira) / Diretora</td>
+                            <td>Nº de notícias produzidas: > 12/ano</td>
+                        </tr>
+                        <tr>
+                            <td>Procedimento</td>
+                            <td>8</td>
+                            <td>Nº artigos publicados no site: >  12/Ano</td>
+                        </tr>
+                        <tr>
+                            <td>Fluxograma</td>
+                            <td>D01</td>
+                            <td>Nº presenças em eventos de divulgação institucional e da oferta formativa (jovens e adultos): > 8/ ano</td>
+                        </tr>
+                        <!--- Fim do D01 !-->
+                        <tr>
+                            <td rowspan="3">D02</td>
+                            <td>Modelo</td>
+                            <td>006</td>
+                            <td rowspan="3">Gerir a Documentação do SGQ</td>
+                            <td rowspan="3">Equipa Qualidade / Diretora / Téc. Informática</td>
+                            <td rowspan="3">Idade média dos documentos</td>
+                        </tr>
+                        <tr>
+                            <td>Procedimento</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Fluxograma</td>
+                            <td>D02</td>
+                        </tr>
+                </tbdoy>
             </table>
-
             <div class="footer">
             <img src="imagens/barra de logos.png" alt="barra de logos" class="barradelogos"/>
             </div>
