@@ -302,7 +302,7 @@
                 <tbody>
                 <tbody>
                 </tbody>
-                <tr>
+                  <tr>
                             <td rowspan="6">
                              D Gerir a comunicação e divulgação
                             </td>
@@ -341,6 +341,80 @@
                             <td>D02</td>
                         </tr>
                 </tbdoy>
+                <tbody>
+                    <tr>
+                        <td rowspan="15">E Melhorar</td>
+                        <td rowspan="3">E01</td>
+                        <td>Modelo</td>
+                        <td>002/023</td>
+                        <td rowspan="3">Tratar não conformidades e melhorias</td>
+                        <td rowspan="3">Equipa Qualidade</td>
+                        <td rowspan="3">Taxa de eficácia de AC</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>E01</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">E02</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>003/004</td>
+                        <td rowspan="4">Realizar auditorias internas</td>
+                        <td rowspan="4">Equipa Qualidade / Diretora</td>
+                        <td rowspan="1">Taxa de execução de AI</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td>NA</td>
+                        <td rowspan="2">Tempo médio para análise de NC</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>E02</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">E03</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>007</td>
+                        <td rowspan="4">Tratar reclamações</td>
+                        <td rowspan="4">Equipa Qualidade / Diretora / Maria Faustino</td>
+                        <td rowspan="4">Taxa de resposta às reclamações</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td style="background-color:gray; color:white;">NA</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>E03</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">E04</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>001</td>
+                        <td rowspan="4">Monitorizar Processos</td>
+                        <td rowspan="4">Equipa Qualidade</td>
+                        <td rowspan="4">Taxa de tratamento de desvios</td>
+                    </tr>
+                    <tr>
+                        <td>Procedimento</td>
+                        <td style="background-color:gray; color:white;">NA</td>
+                    </tr>
+                    <tr>
+                        <td>Fluxograma</td>
+                        <td>E04</td>
+                    </tr>
+                </tbody>
             </table>
             <div class="footer">
             <img src="imagens/barra de logos.png" alt="barra de logos" class="barradelogos"/>
