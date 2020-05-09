@@ -33,7 +33,7 @@ body{
     font-size: 20px;
     padding: 8px 0;
     margin: 10px 5px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #4caf50;
 }
 .textbox i{
     width: 20px;
@@ -50,7 +50,7 @@ body{
     font-size: 18px;
     width: auto;
     float: left;
-    margin: 10px;
+    margin: 8px;
 }
 .textbox ::placeholder{
     color: darkgray;
@@ -58,7 +58,7 @@ body{
 .btn{
     width: 100%;
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid #4caf50;
     color: white;
     padding: 5px;
     font-size: 18px;

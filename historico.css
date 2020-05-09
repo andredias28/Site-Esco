@@ -15,6 +15,9 @@ th{
   background: #000080;
   color: white;
 }
+td{
+  border: solid 1px #111;
+}
 
 tr:nth-child(even){
   background: #e8e8e8;
@@ -87,7 +90,7 @@ table.dataTable tfoot th {
 }
 table.dataTable thead th,
 table.dataTable thead td {
-  padding: 12px 18px;
+  padding: 18px 18px;
   border-bottom: 1px solid #111;
 }
 table.dataTable thead th:active,
