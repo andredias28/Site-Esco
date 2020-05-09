@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="login.css">
-    <title>Login</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Iniciar-Sessão</title>
 </head>
 <body>
     
     <div class="loginbox">
-        <img src="imagens/avatar.png" class="avatar">
         <h1>Iniciar-Sessão</h1>
         <form method="post">
-            <p>Número de Funcionário</p>
-            <input type="text" name="numero" placeholder="Número de Funcionário">
-            <p>Senha</p>
+        <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input type="text" name="numero" placeholder="Número">
+        </div>
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
             <input type="password" name="passe" placeholder="Senha">
-            <input type="submit" name="enviar" value="Entrar">
+        </div>
+            <input class="btn" type="submit" name="enviar" value="Entrar">
             <a href="Esqueceu.php">Esqueceu-se da senha?</a>
         </form>
 </body>
