@@ -40,7 +40,7 @@
                         <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html"><button id="botao" class="btn btn-danger">Sair</button></a>
+                        <a href="paginainicio.html"><button id="botao" class="btn btn-danger">Sair</button></a>
                     </li>
                 </ul>
             </div>
