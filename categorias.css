@@ -2,8 +2,23 @@ button{
     margin-top: 5px;
 }
 #buttons{
-  margin-left: 750px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+body{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagens/jobs.jpg);
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
 
+.barradelogos{
+  height: 50px;
+  margin-left: 1100px;
+  margin-top: 35px;
 }
 
 table{
@@ -67,6 +82,8 @@ th, td{
 }
 .Texto{
     text-align: center;
+    color: white;
+    margin-top: 20px;
 }
 
 table.dataTable {
@@ -465,7 +482,7 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_processing,
 .dataTables_wrapper .dataTables_paginate {
-  color: #333;
+  color: white;
 }
 .dataTables_wrapper .dataTables_scroll {
   clear: both;

@@ -3,8 +3,19 @@ button{
 }
 
 #buttons{
-  margin-left: 750px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
 }
+body{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagens/servicos.jpg);
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
 
 table{
     border: 1px solid black;
@@ -346,12 +357,12 @@ table.dataTable td {
 }
 .dataTables_wrapper .dataTables_length {
   float: right;
-  margin-right: 80px;
+  margin-right: 100px;
   margin-top: 20px;
 }
 .dataTables_wrapper .dataTables_filter {
   float: left;
-  margin-left: 80px;
+  margin-left: 100px;
   margin-top: 20px;
   text-align: right;
 }
@@ -361,13 +372,13 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_info {
   clear: both;
   float: left;
-  margin-left: 80px;
+  margin-left: 100px;
   padding-top: 0.755em;
 }
 .dataTables_wrapper .dataTables_paginate {
   float: right;
   text-align: right;
-  margin-right: 80px;
+  margin-right: 100px;
   padding-top: 0.25em;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button {
@@ -469,7 +480,7 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_processing,
 .dataTables_wrapper .dataTables_paginate {
-  color: #333;
+  color: white;
 }
 .dataTables_wrapper .dataTables_scroll {
   clear: both;

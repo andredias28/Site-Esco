@@ -28,7 +28,6 @@ if($conn->connect_error){
         $avaliacao = mysqli_query($conn, "SELECT * FROM avaliacao INNER JOIN professoresadministracao ON avaliacao.Numero = professoresadministracao.Numero_P WHERE Numero_P = '$numeroProfessor' AND avaliacaoFeita = '0';");
         $teste = mysqli_query($conn, "SELECT * FROM servico INNER JOIN avaliacao ON servico.id_servico = avaliacao.id_servico WHERE avaliacaoFeita='0';");
 
-
         if (isset($_GET['delete'])){
             $idEmp = $_GET['delete'];
             mysqli_query($conn, "DELETE FROM empresa WHERE id_empresa = $idEmp");
