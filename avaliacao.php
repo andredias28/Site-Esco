@@ -33,7 +33,7 @@ ob_start();
         <li class="nav-item">
              <div id="buttons">
                     <a href="perfilprof.php"><button id="perfil" class="btn btn-outline-light">Perfil</button></a>
-                    <a href="index.html"><button id="botao" class="btn btn-danger">Terminar-Sessão</button></a>
+                    <a href="paginainicio.html"><button id="botao" class="btn btn-danger">Terminar-Sessão</button></a>
                 </div>       
              </li>
         </ul>

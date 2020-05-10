@@ -56,14 +56,14 @@ $professore = mysqli_query($conn,"SELECT * FROM professoresadministracao WHERE N
             <li class="nav-item">
                 <div id="buttons">
                     <a href="perfil.php"><button id="perfil" class="btn btn-outline-light">Perfil</button></a>
-                    <a href="index.html"><button id="botao" class="btn btn-danger">Terminar-Sessão</button></a>
+                    <a href="paginainicio.html"><button id="botao" class="btn btn-danger">Terminar-Sessão</button></a>
                 </div>
                 </li>
             </ul>
         </div>
         </nav>
         <div class="imagem">
-            <img class="avatar" src="imagens/professor.jfif"/>
+            <img class="avatar" src="imagens/AvatarDois.png"/>
             <h1 class="userName">Perfil</h1>
         </div>
         <button id="altera" onclick="funcao()" class="btn btn-primary">Alterar</button>
@@ -94,6 +94,9 @@ $professore = mysqli_query($conn,"SELECT * FROM professoresadministracao WHERE N
         </div>
         <button name="Guardar" id="guardar" class="btn btn-primary">Guardar</button>
         </form>
+        <div class="footer">
+            <img src="imagens/barra de logos.png" alt="barra de logos" class="barradelogos"/>
+            </div>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -105,12 +108,11 @@ $professore = mysqli_query($conn,"SELECT * FROM professoresadministracao WHERE N
             document.getElementById("altera").addEventListener("click", funcao);
 
             function funcao(){
-                document.getElementById("nome").disabled = false;
-                document.getElementById("email").disabled = false;
-                document.getElementById("telemovel").disabled = false;
-                document.getElementById("senha").disabled = false;
-
-                }
+                    document.getElementById("nome").disabled = false;
+                    document.getElementById("email").disabled = false;
+                    document.getElementById("telemovel").disabled = false;
+                    document.getElementById("senha").disabled = false;
+            }
         </script>
 
         <?php

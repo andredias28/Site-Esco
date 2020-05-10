@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="esqueceu.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Esqueceu Senha</title>
 </head>
 <body>
-<div class="loginbox">
-        <h1>Esqueceu Senha</h1>
-        <form>
-            <p>Email</p>
-            <input type="text" name="email" placeholder="Email">
-            <p>Confirmar Email</p>
-            <input type="text" name="confirmaemail" placeholder="Confirmar Email">
-            <input type="submit" name="enviar" value="Login">
+        <div class="loginbox">
+        <h1>Esqueceu senha?</h1>
+        <form method="post">
+        <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input type="text" name="numero" placeholder="Número">
+        </div>
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="passe" placeholder="Senha">
+        </div>
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="passe" placeholder="Confirmar Senha">
+        </div>
+            <input class="btn" type="submit" name="enviar" value="Confirmar">
         </form>
 </body>
 </html>

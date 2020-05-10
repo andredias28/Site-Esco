@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="primeiro.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Nova palavra-passe</title>
 </head>
 <body>
 <div class="loginbox">
-        <h1>Nova palavra-passe</h1>
+        <h1>Esqueceu senha?</h1>
         <form method="post">
-            <p>Numero</p>
-            <input type="text" name="numeros" placeholder="Numero">
-            <p>Nova palavra-passe</p>
-            <input type="password" name="novapasse" placeholder="Nova palavra-passe">
-            <p>Confirmar palavra-passe</p>
-            <input type="password" name="confirmar" placeholder="Confirmar palavra-passe">
-            <input type="submit" name="submeter" value="Muda Palavra">
+        <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input type="text" name="numero" placeholder="Número">
+        </div>
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="novapasse" placeholder="Senha">
+        </div>
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="confirmar" placeholder="Confirmar Senha">
+        </div>
+            <input class="btn" type="submit" name="enviar" value="Confirmar">
         </form>
 </body>
 </html>
