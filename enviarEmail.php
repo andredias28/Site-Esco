@@ -1,6 +1,7 @@
 <?php
     ob_start();
-
+    session_start();
+    $email = $_SESSION['emailEnviar'];
     require_once('src/PHPMailer.php');
     require_once('src/SMTP.php');
     require_once('src/Exception.php');
@@ -21,14 +22,18 @@
        $mail->Port = 587;
 
        $mail->setFrom('testeemailesco@gmail.com');
-       $mail->addAddress('andre3785@gmail.com');
+       $mail->addAddress($email);
 
        $mail->isHTML(true);
-       $mail->Subject = 'Teste recuperar senha';
-       $mail->Body = 'Chegou o email teste da <strong>Esco</strong> para mais informações consulte o link http://localhost/au/Site-Esco/Esqueceu.php';
-       $mail->AltBody = 'Chegou o email teste da para mais informações consulte o link http://localhost/au/Site-Esco/Esqueceu.php';
+       $mail->Subject = 'Recuperar a palavra-passe';
+       $mail->Body = 'Por razações de segurança foi mandado um link para o utilizador conseguir mudar a palavra passe, o link encontrasse na linha abaixo 
+        <br><br><br> link para mudar a passe: http://localhost/au/Site-Esco/Esqueceu.php';
+       $mail->AltBody = 'Por razações de segurança foi mandado um link para o utilizador conseguir mudar a palavra passe, o link encontrasse na linha abaixo 
+        <br><br><br> link para mudar a passe: http://localhost/au/Site-Esco/Esqueceu.php';
        if($mail->send()){
            echo "O email foi enviado com sucesso";
+           header('Location: login.php');
+           ob_enf_fluch();
        }else{
            echo "Email não enviado";
        }
@@ -37,7 +42,5 @@
    }catch (Exception $e){
        echo "Erro ao enviar mensagem: {$mail->ErrorInfo}";
    }
-   header('Location: login.php');
-    ob_enf_fluch();
 
 ?>

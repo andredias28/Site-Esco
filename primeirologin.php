@@ -34,20 +34,19 @@
 
 
 
-    if(isset($_POST['submeter'])){
+    if(isset($_POST['enviar'])){
         $novapasse= mysqli_escape_string($conn,$_POST['novapasse']);
         $confirmapasse= mysqli_escape_string($conn,$_POST['confirmar']);
-        $numero = mysqli_escape_string($conn,$_POST['numeros']);
-
+        $numero = mysqli_escape_string($conn,$_POST['numero']);
 
     }
     if(empty($novapasse) or empty($confirmapasse)){
         echo "Tem que preencher todos os campos";
     }
     else{
-        $up = "UPDATE professoresadministracao SET senha='$novapasse' WHERE Numero_P='$numero'";
+        $up = "UPDATE professoresadministracao SET senha='$novapasse' AND primeiro='0'  WHERE Numero_P='$numero'";
         $resultado = mysqli_query($conn,$up);
-        header('Location:index.html');
+        header('Location:paginainicio.html');
     }
 
 
