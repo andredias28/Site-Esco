@@ -22,7 +22,7 @@
             <input type="password" name="passe" placeholder="Senha">
         </div>
             <input class="btn" type="submit" name="enviar" value="Entrar">
-            <a href="Esqueceu.php">Esqueceu-se da senha?</a>
+            <a href="enviarEmail.php">Esqueceu-se da senha?</a>
         </form>
 </body>
 </html>
