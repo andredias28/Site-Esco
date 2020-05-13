@@ -43,12 +43,16 @@ if(isset($_POST['enviar'])){
         $email = $_POST['Email'];
         $confirmaemail = $_POST['confirmeEmail'];
         if(empty($email) || empty($confirmaemail)){
-
+            echo "<script type='text/javascript'>alert('Tem que preencher todos os campos');</script>";
         }else{
-            session_start();
-            $_SESSION['emailEnviar'] = $emailteste;
-            header('Location: enviarEmail.php');
-            ob_enf_fluch();
+            if($email != $confirmaemail){
+                echo "<script type='text/javascript'>alert('O email não é igual ao confirmar email');</script>";
+            }else {
+                session_start();
+                $_SESSION['emailEnviar'] = $confirmaemail;
+                header('Location: enviarEmail.php');
+                ob_enf_fluch();
+            }
         }
 }
 

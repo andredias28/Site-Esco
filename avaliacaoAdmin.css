@@ -19,8 +19,7 @@ body{
 .barradelogos{
   height: 50px;
   float: right;
-  margin-right: 50px;
-  margin-top: 35px;
+  margin-right: 2%;
 }
 .footer {
   position: fixed;
@@ -37,7 +36,7 @@ table{
     border-collapse: collapse;
     opacity: 0.95;
     margin-top: 65px;
-    margin-left: 40px;
+    margin-left: 10%;
     width: 85%;
 }
 td{

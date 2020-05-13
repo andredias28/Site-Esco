@@ -6,6 +6,7 @@ ob_start();
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <link rel="shortcut icon" href="imagens/icon/favicon-96x96.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">

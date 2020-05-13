@@ -10,6 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="imagens/icon/favicon-96x96.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -344,7 +345,7 @@
                         <td>Fluxograma</td>
                         <td>D02</td>
                     </tr>
-            </tbdoy>
+            </tbody>
 <!-- Fim do D -->
 <!-- Inicio do E -->
             <tbody>
@@ -613,7 +614,7 @@
                         <td>H02</td>
                     </tr>
                     <!--- Fim do H02 -->
-                </tbdoy>                                   
+                </tbody>
 <!--- Fim do H -->
 <!-- Inicio do I -->
                 <tbody>
@@ -653,7 +654,7 @@
                         <td>I02</td>
                     </tr>
                     <!--- Fim do I02 -->
-                </tbdoy>
+                </tbody>
 <!--- Fim do I -->
                 
             </table>
