@@ -45,6 +45,21 @@ th, td{
   border:none;
   border-radius: 5px;
 }
+#btnTransferir{
+  margin-left: 5%;
+  padding: 7px;
+  background-color: transparent;
+  border: 1px solid #111;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+#btnTransferir:hover{
+  background-color: white;
+  color: black;
+
+}
 button{
   margin-top: 5px;
 }

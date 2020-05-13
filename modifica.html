@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/jquery.table2excel.js"></script>
+</head>
+<body>
+<table id="tbldemo" style="width:100%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+</table>
+<button id="btnexport" >Export</button>
+<script>
+    $(function () {
+        $("#btnexport").click(function () {
+            $("#tbldemo").table2excel();
+        });
+    });
+</script>
+</body>
+
+</html>

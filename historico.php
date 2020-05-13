@@ -65,7 +65,7 @@ ob_start();
 <!-- Tabela -->
             <table id="tabelaHistorico">
                 <thead>
-                    <tr>
+                    <tr class="noExl">
                         <th>Fornecedor</th>
                         <th>Email</th>
                         <th>Quem avaliou</th>
@@ -99,34 +99,37 @@ ob_start();
                     <?php } ?>
                 </tbody>
             </table>
-            <button>Transferir</button>
+            <button id="btnTransferir">Transferir tabela</button>
 <!-- Fim da tabela -->
           <div class="footer">
             <img src="imagens/barra de logos.png" alt="barra de logos" class="barradelogos"/>
             </div>
 
 <!-- !-- Script's -->
+
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="script/jquery.min.js"></script>
+<script src="script/jquery.table2excel.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $(document).ready( function() {
-    $( "#datepicker" ).datepicker({
-      dateFormat: "yy-m-dd",
-      onSelect: function(){
-        $("#datepicker").trigger('keyup')
-      }
-    });
-  } );
-  </script> 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
     <script>
     $(document).ready( function () {
       $('#tabelaHistorico').DataTable();
    } );
+    $(function () {
+        $('#btnTransferir').click(function () {
+            $('#tabelaHistorico').table2excel({
+                exclude: ".noExl",
+                name: "Tabela Avaliação de Fornecedores",
+                filename: "Avaliação de Fornecedores"
+            });
+        });
+    });
 </script>
+
+
 <!-- Fim dos Script's -->
   </body>
 </html> 
