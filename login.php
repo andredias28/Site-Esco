@@ -67,7 +67,7 @@ if(isset($_POST['enviar'])){
             }
             
             }else{
-                echo "A senha ou o número esta mal";
+                echo "<script type='text/javascript'>alert('A senha que inseriu esta errada');</script>";
             }
          }else if($pass == $dados['senha'] ){
              $up = "UPDATE professoresadministracao SET primeiro='0' WHERE Numero_P='$numero'";
@@ -75,7 +75,7 @@ if(isset($_POST['enviar'])){
              header('Location:primeirologin.php');
          }
     }else{
-        echo "Não foi encontrado esse usuario";
+        echo "<script type='text/javascript'>alert('Número invalido');</script>";
     }
  
     }

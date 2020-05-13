@@ -61,12 +61,6 @@ ob_start();
           </div>
         </nav>
 <!-- Fim do Header -->
-  <form method="post">
-    <div class="historico">
-      <p>Date: <input type="text" id="datepicker" name="datepicker"></p>
-    </div>
-  </form>
-
 
 <!-- Tabela -->
             <table id="tabelaHistorico">
@@ -105,6 +99,7 @@ ob_start();
                     <?php } ?>
                 </tbody>
             </table>
+            <button>Transferir</button>
 <!-- Fim da tabela -->
           <div class="footer">
             <img src="imagens/barra de logos.png" alt="barra de logos" class="barradelogos"/>
