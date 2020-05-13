@@ -36,7 +36,6 @@
 
 if(isset($_POST['enviar'])){
         $numero = $_POST['numero'];
-        echo $numero;
         $emailBd = mysqli_query($conn,"SELECT email FROM professoresadministracao WHERE Ativo='1' and Numero_P='".$numero."'");
         $converterEmail = $emailBd->fetch_assoc();
         $emailteste = $converterEmail['email'];
