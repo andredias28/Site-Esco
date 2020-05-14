@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Maio-2020 às 18:48
--- Versão do servidor: 10.4.11-MariaDB
--- versão do PHP: 7.4.2
+-- Generation Time: 14-Maio-2020 às 03:51
+-- Versão do servidor: 10.1.36-MariaDB
+-- versão do PHP: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `esco`
+-- Database: `esco`
 --
 
 -- --------------------------------------------------------
@@ -50,7 +50,7 @@ CREATE TABLE `avaliacao` (
 --
 
 INSERT INTO `avaliacao` (`id_avaliacao`, `data`, `satisfacao`, `cumprimento`, `naoConformidades`, `categoria`, `classificacao`, `satisfacaoAv`, `cumprimentoAv`, `naoConformidadesAv`, `avaliacaoFeita`, `Numero`, `id_empresa`, `id_servico`) VALUES
-(1, '2020-04-29', '80-99%', 'Sempre', 'ocorreram mas sem impacto', 'A', 3, '3', 4, 3, 1, 2, 1, 1),
+(1, '2020-04-29', '80-99%', 'Sempre', 'ocorreram mas sem impacto', 'A', 3, '3', 4, 3, 0, 100, 1, 1),
 (2, '2020-03-12', '80-99%', 'Frequentemente', 'não ocorreram', 'A', 3, '3', 3, 4, 1, 2, 2, 2);
 
 -- --------------------------------------------------------
@@ -129,9 +129,10 @@ CREATE TABLE `professoresadministracao` (
 --
 
 INSERT INTO `professoresadministracao` (`Numero_P`, `nome`, `email`, `telemovel`, `senha`, `primeiro`, `Perfil`, `Ativo`) VALUES
-(0, 'teste', 'test@gmai.com', '12341924', 'esco', '1', 1, 1),
+(0, 'teste', 'andre3785@gmail.com', '12341924', '123', '1', 1, 1),
 (2, 'Admin', 'qualidade@sefo.pt', '999 999 999', 'admin123', '0', 1, 1),
-(91, 'Álvaro Miguel Ribeiro de Brito', 'alvarobrito@sefo.pt', '999', 'alvaro', '0', 2, 1);
+(91, 'Álvaro Miguel Ribeiro de Brito', 'alvarobrito@sefo.pt', '999', 'alvaro', '0', 2, 1),
+(100, 'Andre', 'andre3785@gmail.com', '', '123', '0', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -154,11 +155,11 @@ INSERT INTO `servico` (`id_servico`, `descricao`, `id_categoria`) VALUES
 (2, 'Sinalização', 2);
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `avaliacao`
+-- Indexes for table `avaliacao`
 --
 ALTER TABLE `avaliacao`
   ADD PRIMARY KEY (`id_avaliacao`),
@@ -167,20 +168,20 @@ ALTER TABLE `avaliacao`
   ADD KEY `id_ServicoAv` (`id_servico`);
 
 --
--- Índices para tabela `categoria`
+-- Indexes for table `categoria`
 --
 ALTER TABLE `categoria`
   ADD PRIMARY KEY (`id_categoria`);
 
 --
--- Índices para tabela `empresa`
+-- Indexes for table `empresa`
 --
 ALTER TABLE `empresa`
   ADD PRIMARY KEY (`id_empresa`),
   ADD KEY `id_servicoEmp` (`id_servico`) USING BTREE;
 
 --
--- Índices para tabela `empresaservico`
+-- Indexes for table `empresaservico`
 --
 ALTER TABLE `empresaservico`
   ADD PRIMARY KEY (`id_servico`,`id_empresa`),
@@ -188,48 +189,48 @@ ALTER TABLE `empresaservico`
   ADD KEY `id_servico` (`id_servico`);
 
 --
--- Índices para tabela `professoresadministracao`
+-- Indexes for table `professoresadministracao`
 --
 ALTER TABLE `professoresadministracao`
   ADD PRIMARY KEY (`Numero_P`);
 
 --
--- Índices para tabela `servico`
+-- Indexes for table `servico`
 --
 ALTER TABLE `servico`
   ADD PRIMARY KEY (`id_servico`),
   ADD KEY `id_categoriaServico` (`id_categoria`) USING BTREE;
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `avaliacao`
+-- AUTO_INCREMENT for table `avaliacao`
 --
 ALTER TABLE `avaliacao`
-  MODIFY `id_avaliacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_avaliacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT de tabela `categoria`
+-- AUTO_INCREMENT for table `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT de tabela `empresa`
+-- AUTO_INCREMENT for table `empresa`
 --
 ALTER TABLE `empresa`
-  MODIFY `id_empresa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_empresa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT de tabela `servico`
+-- AUTO_INCREMENT for table `servico`
 --
 ALTER TABLE `servico`
-  MODIFY `id_servico` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_servico` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- Restrições para despejos de tabelas
+-- Constraints for dumped tables
 --
 
 --
