@@ -54,12 +54,8 @@
     <div class="Texto">
         <h1>Categorias</h1>
     </div>
-
-    <div class="cima">
-        <a href="adicionarCategorias.php"><button type="button" id="inserir" class="btn btn-success">Adicionar</button></a>
-    </div>
 </div>
-
+<a href="adicionarCategorias.php"><button type="button" id="inserir">Adicionar</button></a>
 <table id="tabelaFin">
         <thead>
              <tr>

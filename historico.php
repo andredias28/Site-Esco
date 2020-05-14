@@ -61,7 +61,7 @@ ob_start();
           </div>
         </nav>
 <!-- Fim do Header -->
-
+<a href="adicionarClassificacao.php"><button type="button" id="inserir" class="btn btn-success">Inserir</button></a>
 <!-- Tabela -->
             <table id="tabelaHistorico">
                 <thead>

@@ -26,7 +26,19 @@ body{
   letter-spacing: 5px;
   font-size: 20px;
 }
-
+.btnAltera{
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid #111;
+  cursor: pointer;
+  transition: 0.6s ease;
+  text-decoration: none;
+}
+.btnAltera:hover{
+  background-color: darkgreen;
+  color: black;
+  text-decoration: none;
+}
 .nav-links{
   display: flex;
   text-align: left;
@@ -135,12 +147,21 @@ th, td{
 .Texto{
   color: white;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 2%;
 }
 #inserir{
-  float: right;
-  margin-right: 90px;
-  margin-bottom: 5px;
+  float: left;
+  margin-left: 5%;
+  margin-top: 3%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+#inserir:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 1s ease;
 }
 .cima{
   margin-top: 20px;
@@ -435,19 +456,19 @@ table.dataTable td {
 .dataTables_wrapper {
   position: relative;
   clear: both;
-  margin-top: 80px;
+  margin-top: 5%;
   *zoom: 1;
   zoom: 1;
 }
 .dataTables_wrapper .dataTables_length {
   float: right;
-  margin-right: 100px;
-  margin-top: 20px;
+  margin-right: 5%;
+  margin-top: 1%;
 }
 .dataTables_wrapper .dataTables_filter {
   float: left;
-  margin-left: 100px;
-  margin-top: 20px;
+  margin-left: 5%;
+  margin-top: 1%;
   text-align: right;
 }
 .dataTables_wrapper .dataTables_filter input {
@@ -456,13 +477,13 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_info {
   clear: both;
   float: left;
-  margin-left: 100px;
+  margin-left: 5%;
   padding-top: 0.755em;
 }
 .dataTables_wrapper .dataTables_paginate {
   float: right;
   text-align: right;
-  margin-right: 100px;
+  margin-right: 5%;
   padding-top: 0.25em;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button {

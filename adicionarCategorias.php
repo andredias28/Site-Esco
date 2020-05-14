@@ -41,11 +41,17 @@
                         <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
                     </li>
                     <li class="nav-item">
-                        <a href="paginainicio.html"><button id="botao" class="btn btn-danger">Sair</button></a>
+                        <div id="buttons">
+                            <a href="perfil.php"><button id="perfil" class="btn btn-outline-light">Perfil</button></a>
+                            <a href="paginainicio.html"><button id="botao" class="btn btn-danger">Terminar-Sessão</button></a>
+                        </div>
                     </li>
                 </ul>
             </div>
          </nav>
+        <div class="Texto">
+            <h1>Inserir Categoria</h1>
+        </div>
         <form method="post" action="">
             <div class="tabela">
                 <label>Descrição da Categoria</label>

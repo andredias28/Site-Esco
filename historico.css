@@ -49,7 +49,7 @@ th, td{
   margin-left: 5%;
   padding: 7px;
   background-color: transparent;
-  border: 1px solid #111;
+  border: 1px solid white;
   color: white;
   font-size: 18px;
   cursor: pointer;
@@ -58,7 +58,20 @@ th, td{
 #btnTransferir:hover{
   background-color: white;
   color: black;
-
+}
+#inserir{
+  float: left;
+  margin-left: 5%;
+  margin-top: 5%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+#inserir:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 1s ease;
 }
 button{
   margin-top: 5px;

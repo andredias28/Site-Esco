@@ -53,10 +53,9 @@
 
     <div class="Texto">
         <h1>Serviços</h1>
-        <a href="adicionarServicos.php"><button type="button" id="inserir" class="btn btn-success">Inserir</button></a>
     </div>
 </div>
-
+<a href="adicionarServicos.php"><button type="button" id="inserir">Inserir</button></a>
 <table id="tabelaFin">
         <thead>
              <tr>

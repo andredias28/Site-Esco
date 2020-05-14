@@ -1,10 +1,25 @@
 .tabela{
     margin: 10px 0px 10px 0px;
 }
+body{
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imagens/historico.jpg);
+     height: 100vh;
+     width: auto;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+ }
+
 .tabela label{
     display: block;
     text-align: left;
     margin: 3px;
+    color: white;
+}
+.Texto{
+    text-align: center;
+    color: white;
+    margin-top: 2%;
 }
 .tabela input{
     height: 30px;
@@ -18,9 +33,15 @@
     padding: 10px;
     font-size: 15px;
     color: white;
-    background: #5f9ea0;
+    background: transparent;
     border:none;
+    border: 1px solid white;
     border-radius: 5px;
+    transition: 1s ease;
+}
+.button:hover{
+    color: white;
+    background: black;
 }
 form{
     width: 45%;
@@ -31,5 +52,7 @@ form{
     border-radius: 5px;
 }
 #buttons{
-    margin-left: 750px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
 }

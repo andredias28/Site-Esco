@@ -51,6 +51,9 @@ ob_start();
                 </ul>
             </div>
          </nav>
+        <div class="Texto">
+            <h1>Inserir Avaliações</h1>
+        </div>
         <form method="post" action="">
             <div class="tabela">
                 <label>Fornecedores</label>
@@ -76,10 +79,17 @@ ob_start();
             </div>
             <div class="tabela">
                 <label>Email</label>
-                <input type="text" name="Email">
+                <select name="Email">
+                    <option></option>
+                    <?php while ($coluna = $irbuscaremail->fetch_assoc()){
+                        $teste = $coluna['email'];
+                        echo "<option value='$teste'>$teste</option>";
+                    }
+                    ?>
+                </select>
             </div>
             <div class="tabela">
-            <label>Quem avaliou</label>
+            <label>Quem Avalia</label>
                 <select name="quem_Avalia">
                     <option></option>
                     <?php while($coluna = $professores->fetch_assoc()){
@@ -115,10 +125,12 @@ if(isset($_POST['salvar'])){
     $idEmpresa = mysqli_query($conn, "SELECT id_empresa FROM empresa WHERE nome_empresa = '".$fornecedor."'");
     $numero = mysqli_query($conn, "SELECT Numero_P FROM professoresadministracao WHERE nome = '".$quemAvalia."'");
     $servicoAv = mysqli_query($conn, "SELECT id_servico FROM servico WHERE descricao = '".$servicos."'");
+    $Email = mysqli_query($conn, "SELECT email FROM empresa WHERE email='".$email."'");
     /* Resolução do problema de insereção*/    
         $rows= $idEmpresa->fetch_assoc();
         $numeros = $numero->fetch_assoc();
         $services = $servicoAv->fetch_assoc();
+        $Emailrow = $Email->fetch_assoc();
         echo $numeros['Numero_P'];
         if($stmt = $conn->prepare("INSERT INTO avaliacao ( Numero, id_empresa) VALUES (?,?)")){
             $stmt->bind_param("ss",$numeros['Numero_P'],$rows['id_empresa']);

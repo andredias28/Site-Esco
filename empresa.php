@@ -54,10 +54,9 @@
 
 <div class="Texto">
         <h1>Empresas</h1>
-        <a href="inserirEmpresa.php"><button type="button" id="inserir" class="btn btn-success">Inserir</button></a>
     </div>
 </div>
-
+<a href="inserirEmpresa.php"><button type="button" id="inserir" class="btn btn-success">Inserir</button></a>
     <table id="teste">
         <thead>
              <tr>
@@ -79,7 +78,7 @@
                     <td><?php echo $row['descricao']?></td>
                     <td><?php echo $row['morada']?></td>
                     <td> 
-                        <a class="btn btn-success" href="alterarEmpresa.php?edita=<?php echo $row['id_empresa'];?>">Alterar</a>
+                        <a class="btnAltera" href="alterarEmpresa.php?edita=<?php echo $row['id_empresa'];?>">Alterar</a>
                      </td>
                      <td>
                         <a class="btn btn-danger" href="empresa.php?delete=<?php echo $row['id_empresa']; ?>">X</a>
@@ -89,8 +88,8 @@
         </tbody>
     </table>
     <div class="footer">
-            <img src="imagens/barra de logos.png" alt="barra de logos" class="barradelogos"/>
-            </div>
+        <img src="imagens/barra de logos.png" alt="barra de logos" class="barradelogos"/>
+    </div>
 <!-- Script's -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

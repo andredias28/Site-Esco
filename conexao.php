@@ -27,8 +27,9 @@ if($conn->connect_error){
         $empresaAv = mysqli_query($conn, "SELECT * FROM empresa INNER JOIN avaliacao ON empresa.id_empresa = avaliacao.id_empresa WHERE Numero = '$numeroProfessor' AND avaliacaoFeita='0';");
         $avaliacao = mysqli_query($conn, "SELECT * FROM avaliacao INNER JOIN professoresadministracao ON avaliacao.Numero = professoresadministracao.Numero_P WHERE Numero_P = '$numeroProfessor' AND avaliacaoFeita = '0';");
         $teste = mysqli_query($conn, "SELECT * FROM servico INNER JOIN avaliacao ON servico.id_servico = avaliacao.id_servico WHERE avaliacaoFeita='0';");
+        $irbuscaremail = mysqli_query($conn, "SELECT email FROM empresa INNER JOIN servico ON empresa.id_servico = servico.id_servico;");
 
-        if (isset($_GET['delete'])){
+if (isset($_GET['delete'])){
             $idEmp = $_GET['delete'];
             mysqli_query($conn, "DELETE FROM empresa WHERE id_empresa = $idEmp");
             header('location: empresa.php');
