@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="inserirEmpresa.css">
+    <link rel="stylesheet" href="inserirProfessores.css">
     <title>InserirProfessores</title>
 </head>
 <body>
@@ -42,11 +42,17 @@
                         <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html"><button id="botao" class="btn btn-danger">Sair</button></a>
+                        <div id="buttons">
+                            <a href="perfil.php"><button id="perfil" class="btn btn-outline-light">Perfil</button></a>
+                            <a href="paginainicio.html"><button id="botao" class="btn btn-danger">Terminar-Sessão</button></a>
+                        </div>
                     </li>
                 </ul>
             </div>
          </nav>
+        <div class="Texto">
+            <h1>Inserir Professores</h1>
+        </div>
         <form method="post" action="">
             <div class="tabela">
                 <label>Numero</label>

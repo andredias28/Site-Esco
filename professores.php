@@ -57,10 +57,8 @@ include('conexao.php');
         <h1>Professores</h1>
     </div>
 </div>
+<a href="inserirProfessores.php"><button type="button" id="inserir">Inserir</button></a>
 <!-- Tabela -->
-
-      <div>
-        <div>
           <table id="table">
             <thead>
                 <tr>

@@ -13,39 +13,48 @@
 </head>
 <body>
 <!-- Header -->
-    <nav class="navbar navbar-expand-lg  navbar navbar-dark bg-primary">
-            <a class="navbar-brand" href="paginainicialadmin.php"><img src="imagens/escobranco.png" alt="Esco logo" height="40px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="paginainicialadmin.php">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="historico.php">Historico</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Fornecedores</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="empresa.php">Empresa</a>
-                        <a class="dropdown-item" href="Servicos.php">Serviço</a>
-                        <a class="dropdown-item" href="categorias.php">Categoria</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="professores.php">Professores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html"><button id="botao" class="btn btn-danger">Sair</button></a>
-                    </li>
-                </ul>
-            </div>
-         </nav>
+<nav class="navbar navbar-expand-lg  navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="paginainicialadmin.php"><img src="imagens/escobranco.png" alt="Esco logo" height="40px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="paginainicialadmin.php">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="historico.php">Historico</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Fornecedores</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="empresa.php">Empresa</a>
+                    <a class="dropdown-item disabled" href="#">Serviço</a>
+                    <a class="dropdown-item" href="categorias.php">Categoria</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="professores.php">Professores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
+            </li>
+            <li class="nav-item">
+                <div id="buttons">
+                    <a href="perfil.php"><button id="perfil" class="btn btn-outline-light">Perfil</button></a>
+                    <a href="paginainicio.html"><button id="botao" class="btn btn-danger">Terminar-Sessão</button></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Fim do Header -->
+
+
+        <div class="Texto">
+            <h1>Adicionar Serviços</h1>
+        </div>
         <form method="post" action="">
             <div class="tabela">
                 <label>Descrição do Serviço</label>

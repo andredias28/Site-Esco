@@ -17,7 +17,21 @@ body{
   background-attachment: fixed;  
   background-size: cover;
 }
-
+#inserir{
+  float: left;
+  padding: 10px;
+  margin-left: 5%;
+  margin-top: 5%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+#inserir:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 1s ease;
+}
 table{
     border: 1px solid black;
     border-collapse: collapse;
