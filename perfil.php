@@ -70,25 +70,25 @@ $professore = mysqli_query($conn,"SELECT * FROM professoresadministracao WHERE N
         <form method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
-            <label for="inputNumver">Numero</label>
+            <label for="inputNumver">Número</label>
             <input type="text" class="form-control" id="numero" name="numero" disabled value="<?php echo $numero ?>">
             </div>
             <div class="form-group col-md-6">
-            <label for="inputName">Nome</label>
+            <label for="inputName">Nome*</label>
             <input type="text" class="form-control" id="nome" name="nome" disabled placeholder="Nome" value="<?php echo $nome ?>">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputEmail">Email</label>
+            <label for="inputEmail">Email*</label>
             <input type="email" class="form-control" id="email" name="email" disabled placeholder="Email" value="<?php echo $email ?>">
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
-            <label for="inputPhone">Telemovel</label>
-            <input type="text" data-mask="000 000 000" maxlength="9" name="telemovel" class="form-control" id="telemovel" disabled placeholder="Email" value="<?php echo $telemovel ?>">
+            <label for="inputPhone">Telemovel(Opcional)</label>
+            <input type="text" data-mask="000 000 000" maxlength="9" name="telemovel" class="form-control" id="telemovel" disabled placeholder="telemovel" value="<?php echo $telemovel ?>">
             </div>
             <div class="form-group col-md-6">
-            <label for="inputPassword4">Senha</label>
+            <label for="inputPassword4">Senha*</label>
             <input type="password" class="form-control" id="senha" name="senha" disabled placeholder="Password" value="<?php echo $senha ?>">
             </div>
         </div>
@@ -122,7 +122,7 @@ $professore = mysqli_query($conn,"SELECT * FROM professoresadministracao WHERE N
                 $tele = $_POST['telemovel'];
                 $senha = $_POST['senha'];
                 
-                if(empty($name) || empty($mail) || empty($tele) || empty($senha)){
+                if(empty($name) || empty($mail) || empty($senha)){
                     echo "<script type='text/javascript'>alert('Não ouve alterações');</script>";
                 }else{
                     mysqli_query($conn, "UPDATE professoresadministracao SET nome = '$name', email = '$mail', telemovel = '$tele', senha = '$senha' WHERE Numero_P = $numero");

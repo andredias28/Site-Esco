@@ -1,4 +1,6 @@
-<?php include('conexao.php') ?>
+<?php include('conexao.php');
+ob_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +32,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Fornecedores</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="empresa.php">Empresa</a>
-                    <a class="dropdown-item disabled" href="#">Serviço</a>
+                    <a class="dropdown-item" href="Servicos.php">Serviço</a>
                     <a class="dropdown-item" href="categorias.php">Categoria</a>
                 </div>
             </li>
@@ -103,6 +105,7 @@
                 $stmt->execute();
             if($stmt->error) die($stmt->error);
                 header('location: Servicos.php');
+                ob_enf_fluch();
             }else{
             die("erro na query");
                 }

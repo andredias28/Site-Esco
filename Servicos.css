@@ -87,7 +87,7 @@ th, td{
 .Texto{
     text-align: center;
     color: white;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 /*Tabela*/
 
@@ -367,8 +367,8 @@ table.dataTable td {
 }
 .dataTables_wrapper .dataTables_length {
   float: right;
-  margin-right: 100px;
-  margin-top: 20px;
+  margin-right: 5%;
+  margin-top: 1%;
 }
 .dataTables_wrapper .dataTables_filter {
   float: left;
@@ -401,8 +401,8 @@ table.dataTable td {
   text-decoration: none !important;
   cursor: pointer;
   *cursor: hand;
-  color: #333 !important;
-  border: 1px solid #111;
+  color: white !important;
+  border: 1px solid white;
   border-radius: 2px;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
@@ -432,7 +432,7 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
   color: white !important;
   border: 1px solid #111;
-  background-color: #585858;
+  background-color: white;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, #585858 0%, #111 100%);
