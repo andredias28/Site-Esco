@@ -3,6 +3,15 @@ ob_start();
 
 if(isset($_GET['edita'])){
     $id_empresa = $_GET['edita'];
+    $teste = $conn->query("SELECT * FROM empresa WHERE id_empresa=$id_empresa") or die($conn->error());
+
+        $row = $teste->fetch_array();
+        $nomeEmpresa = $row['nome_empresa'];
+        $morada_empresa = $row['morada'];
+        $email_empresa = $row['email'];
+        $codigoPostal_Empresa = $row['codigoPostal'];
+        $numeroTelemovel_Empresa = $row['numeroTelemovel'];
+
 }
 ?>
 
@@ -47,37 +56,47 @@ if(isset($_GET['edita'])){
                         <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html"><button id="botao" class="btn btn-danger">Sair</button></a>
+                        <div id="buttons">
+                            <a href="perfil.php"><button id="perfil" class="btn btn-outline-light">Perfil</button></a>
+                            <a href="index.html"><button id="botao" class="btn btn-danger">Terminar-Sessão</button></a>
+                        </div>
                     </li>
                 </ul>
             </div>
          </nav>
 <!-- Fim do Header -->
-
+    <div class="Texto">
+        <h1>Inserir Categoria</h1>
+    </div>
 <!-- Formulario -->
     <div class="formulario">
         <form method="post">
             <div class="form-group">
                 <label>Fornecedor</label>
-                <input type="text" class="form-control" name="fornecedor" placeholder="Fornecedor">
+                <input type="text" class="form-control"
+                       value="<?php echo $nomeEmpresa; ?>" name="fornecedor" placeholder="Fornecedor">
             </div>
             <div class="form-group">
                 <label>Email</label>
-                <input type="email" name="email" class="form-control" placeholder="Email">
+                <input type="email" name="email"
+                       value="<?php echo $email_empresa; ?>" class="form-control" placeholder="Email">
             </div>
             <div class="form-group">
                 <label>Telemovel</label>
-                <input type="text" maxlength="9" name="numeroTelemovel" class="form-control cel-sp-mask" data-mask="000 000 000" placeholder="Telemovel">
+                <input type="text" maxlength="9" name="numeroTelemovel"
+                       value="<?php echo $numeroTelemovel_Empresa; ?>" class="form-control cel-sp-mask" data-mask="000 000 000" placeholder="Telemovel">
             </div>
             <div class="form-group">
                 <label>Codigo-Postal</label>
-                <input type="text" class="form-control" name="codigoPostal" data-mask="0000-000" maxlength="7" type="text" placeholder="Codigo-Postal">
+                <input type="text" class="form-control"
+                       value="<?php echo $codigoPostal_Empresa; ?>" name="codigoPostal" data-mask="0000-000" maxlength="7" type="text" placeholder="Codigo-Postal">
             </div>
             <div class="form-group">
                 <label>Morada</label>
-                <input type="text" name="morada" class="form-control" placeholder="Morada">
+                <input type="text" name="morada"
+                       value="<?php echo $morada_empresa; ?>" class="form-control" placeholder="Morada">
             </div>
-            <button type="submit" name="Alterar" class="btn btn-primary">Alterar</button>
+            <button type="submit" name="Alterar" class="button">Alterar</button>
         </form>
     </div>
 

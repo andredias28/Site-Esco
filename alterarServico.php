@@ -1,8 +1,13 @@
 <?php include('conexao.php'); 
 ob_start();
 
-if(isset($_GET['editaSer'])){
+if(isset($_GET['editaSer'])) {
     $id_servico = $_GET['editaSer'];
+    $GuardaServicos = $conn->query("SELECT * FROM servico WHERE id_servico=$id_servico") or die($conn->error());
+
+    $rows = $GuardaServicos->fetch_array();
+    $descricao_servico = $rows['descricao'];
+    $categoria_servico = $rows['id_categoria'];
 }
 ?>
 
@@ -56,17 +61,19 @@ if(isset($_GET['editaSer'])){
             </div>
          </nav>
 <!-- Fim do Header -->
-
+    <div class="Texto">
+        <h1>Inserir Categoria</h1>
+    </div>
 <!-- Formulario -->
     <div class="formulario">
         <form method="post">
             <div class="form-group">
                 <label>id_servico</label>
-                <input type="text" class="form-control" name="fornecedor" value="<?php echo $id_servico ?>" disabled>
+                <input type="text" class="form-control" name="fornecedor" value="<?php echo $id_servico; ?>" disabled>
             </div>
             <div class="form-group">
                 <label>Descricao</label>
-                <input type="text" name="descricao" class="form-control" placeholder="Descrição">
+                <input type="text" name="descricao" value="<?php echo $descricao_servico; ?>" class="form-control" placeholder="Descrição">
             </div>
             <div class="form-group">
                 <label>Categoria</label>
@@ -114,4 +121,3 @@ if(isset($_POST['Alterar'])){
 }
 
 ?>
-

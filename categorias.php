@@ -71,7 +71,7 @@
                     <td><?php echo $row['id_categoria']?></td>
                     <td><?php echo $row['descricao_Cate']?></td>
                     <td>
-                        <a class="btn btn-success" href="alterarServico.php?editaSer=<?php echo $row['id_categoria']; ?>">Mudar</a>
+                        <a class="btn btn-success" href="alterarCategoria.php?editaCategoria=<?php echo $row['id_categoria']; ?>">Mudar</a>
                     </td>
                     <td>
                         <a class="btn btn-danger" href="categorias.php?deleteCat=<?php echo $row['id_categoria']; ?>">X</a>
