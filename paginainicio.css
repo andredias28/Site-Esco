@@ -44,6 +44,8 @@ ul li a:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    animation: text 3s 1;
+
 }
 .title h1{
     color: #fff;
@@ -58,6 +60,7 @@ ul li a:hover{
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
+    animation: botao 3s 1;
 }
 .btn{
     border: 1px solid #fff;
@@ -69,4 +72,32 @@ ul li a:hover{
 .btn:hover{
     background-color: #fff;
     color: #000;
+}
+@keyframes text {
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 10px;
+        margin-bottom: -40px;
+    }
+    85%{
+        margin-bottom: -40px;
+    }
+}
+
+@keyframes botao {
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    30%{
+        transform: rotate(180deg);
+        margin-bottom: -40px;
+    }
+    85%{
+        transform: rotate(360deg);
+        margin-bottom: -40px;
+    }
 }
