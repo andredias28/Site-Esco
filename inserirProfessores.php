@@ -55,31 +55,31 @@
         </div>
         <form method="post" action="">
             <div class="tabela">
-                <label>Numero</label>
+                <label>Numero*</label>
                 <input type="number" name="numero">
             </div>
             <div class="tabela">
-                <label>Nome</label>
+                <label>Nome*</label>
                 <input type="text" name="nome">
             </div>
             <div class="tabela">
-                <label>Email</label>
+                <label>Email*</label>
                 <input type="email" class="form-control cel-sp-mask" name="email">
             </div>
             <div class="tabela">
-                <label>Telemovel</label>
+                <label>Telemovel(opcional)</label>
                 <input type="text" class="form-control cel-sp-mask" data-mask="000 000 000" maxlength="9" name="tele">
             </div>
             <div class="tabela">
-                <label>Senha</label>
+                <label>Senha*</label>
                 <input type="password" name="senha">
             </div>
             <div class="tabela">
-                <label>Confirmar senha</label>
+                <label>Confirmar senha*</label>
                 <input type="password" name="confirmarSenha">
             </div>
             <div class="tabela">
-                <label>Perfil</label>
+                <label>Perfil*</label>
                 <select name="Perfil">
                 <option></option>
                 <option>Professor</option>
@@ -113,7 +113,7 @@
         $primeiro = 1;
         $Ativo = 1;
 
-        if(empty($numero) || empty($nome) || empty($email) || empty($telemovel) || empty($senha) || empty($confirmarSenha) || empty($perfil)){
+        if(empty($numero) || empty($nome) || empty($email) || empty($senha) || empty($confirmarSenha) || empty($perfil)){
             echo "<script type='text/javascript'>alert('tem que preencher todos os campos');</script>";
         }
         else{

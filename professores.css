@@ -21,7 +21,7 @@ body{
   float: left;
   padding: 10px;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 2%;
   background-color: transparent;
   border: 1px solid white;
   color: white;
@@ -94,6 +94,16 @@ button{
   position: absolute;
   right: 20px;
   top: 10px;
+}
+.barradelogos{
+  height: 50px;
+  float: right;
+}
+.footer{
+  position: fixed;
+  float: right;
+  margin-right: 100%;
+  background-color: transparent;
 }
 
 table.dataTable {
@@ -364,19 +374,19 @@ table.dataTable td {
 .dataTables_wrapper {
   position: relative;
   clear: both;
-  margin-top: 80px;
+  margin-top: 20px;
   *zoom: 1;
   zoom: 1;
 }
 .dataTables_wrapper .dataTables_length {
   float: right;
-  margin-right: 100px;
-  margin-top: 20px;
+  margin-right: 5%;
+  margin-top: 1%;
 }
 .dataTables_wrapper .dataTables_filter {
   float: left;
-  margin-left: 100px;
-  margin-top: 20px;
+  margin-left: 5%;
+  margin-top: 1%;
   text-align: right;
 }
 .dataTables_wrapper .dataTables_filter input {
@@ -385,7 +395,7 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_info {
   clear: both;
   float: left;
-  margin-left: 100px;
+  margin-left: 5%;
   padding-top: 0.755em;
 }
 .dataTables_wrapper .dataTables_paginate {
@@ -404,8 +414,8 @@ table.dataTable td {
   text-decoration: none !important;
   cursor: pointer;
   *cursor: hand;
-  color: #333 !important;
-  border: 1px solid #111;
+  color: white !important;
+  border: 1px solid white;
   border-radius: 2px;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
@@ -433,7 +443,7 @@ table.dataTable td {
   box-shadow: none;
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-  color: #333 !important;
+  color: white !important;
   border: 1px solid #111;
   background-color: #585858;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111));
