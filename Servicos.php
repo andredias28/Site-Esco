@@ -89,7 +89,18 @@
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
         <script>
              $(document).ready( function () {
-             $('#tabelaFin').DataTable();
+             $('#tabelaFin').DataTable({
+                 "language": {
+                     "paginate": {
+                         "previous": "Anterior",
+                         "next": "Próximo"
+                     },
+                     "sSearch": "Pesquisar:",
+                     "sInfoEmpty" : "Mostrando 0 até 0 registos de 0 registos",
+                     "sEmptyTable" : "Não existem dados para serem mostrados",
+                     "sInfoFiltered": "(filtro aplicado em MAX registos)",
+                 }
+             });
             } );
         </script>
 <!-- Fim dos Script's -->    
