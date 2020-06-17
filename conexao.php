@@ -41,6 +41,7 @@ if (isset($_GET['delete'])){
         }
         if(isset($_GET['deleteCat'])){
             $idCate = $_GET['deleteCat'];
+            echo $idCate;
             mysqli_query($conn,"DELETE FROM categoria WHERE id_categoria = $idCate");
             header('location: categorias.php');
         }
