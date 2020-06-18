@@ -15,12 +15,13 @@ $professore = mysqli_query($conn,"SELECT * FROM professoresadministracao WHERE N
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagens/icon/favicon-96x96.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="perfil.css">
     <link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
-    <title>Professores</title>
+    <title>Perfil</title>
 </head>
 <body>
 
@@ -48,7 +49,7 @@ $professore = mysqli_query($conn,"SELECT * FROM professoresadministracao WHERE N
                     </li>
         <!-- Fim da DropDown -->
             <li class="nav-item">
-                <a class="nav-link active" href="professores.php">Professores</a>
+                <a class="nav-link" href="professores.php">Professores</a>
             </li>
             <li class="nav-item">
                                 <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
