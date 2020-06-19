@@ -81,10 +81,10 @@ ob_start();
                     </tr>
                 </thead>
                 <tbody>
-                    <?php while(($row = mysqli_fetch_array($sql)) && ($rows = mysqli_fetch_array($historicoAvalia))){ ?> 
+                    <?php while($rows = mysqli_fetch_array($historicoAvalia)){ ?>
                       <tr>
-                       <td><?php echo $row['nome_empresa']?></td>
-                       <td><?php echo $row['email']?></td>
+                       <td><?php echo $rows['nome_empresa']?></td>
+                       <td><?php echo $rows['email']?></td>
                        <td><?php echo $rows['nome']?></td>
                        <td><?php echo $rows['data']?></td>
                        <td><?php echo $rows['cumprimento']?></td>
@@ -145,17 +145,4 @@ ob_start();
 
 <!-- Fim dos Script's -->
   </body>
-</html> 
-
-<?php
-  if(isset($_POST['botao'])){
-    session_start();
-    $datapicker = $_POST['datepicker'];
-    echo $datapicker;
-    $dataUp = mysqli_query($conn, "SELECT * FROM avaliacao INNER JOIN professoresadministracao ON avaliacao.Numero = professoresadministracao.Numero_P WHERE avaliacaoFeita='1' and data='$_SESSION[$datapicker]';");
-    $row = mysqli_fetch_array($dataUp);
-    header('location: historico.php');
-    ob_enf_fluch();
-  }
-
-?>
+</html>
