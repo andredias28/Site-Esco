@@ -131,13 +131,16 @@ if(isset($_POST['salvar'])){
         $numeros = $numero->fetch_assoc();
         $services = $servicoAv->fetch_assoc();
         $Emailrow = $Email->fetch_assoc();
-        echo $numeros['Numero_P'];
-        if($stmt = $conn->prepare("INSERT INTO avaliacao ( Numero, id_empresa) VALUES (?,?)")){
-            $stmt->bind_param("ss",$numeros['Numero_P'],$rows['id_empresa']);
+        $avaliaFeita = "0";
+
+        $dt = new DateTime();
+        $dates = date('Y-m-d');
+       if($stmt = $conn->prepare("INSERT INTO avaliacao (data,avaliacaoFeita,Numero,id_empresa,id_servico) VALUES (?,?,?,?,?)")){
+            $stmt->bind_param("sssss", $dates,$avaliaFeita,$numeros['Numero_P'],$rows['id_empresa'], $services['id_servico']);
             $stmt->execute();
-            header('location: avaliacao.php');
+            header('location: avaliacaoAdmin.php');
         if($stmt->error) die($stmt->error);
-            header('location: avaliacao.php');
+            header('location: adicionarCategorias.php');
         }else{
         die("erro na query");
         }
