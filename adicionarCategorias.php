@@ -83,7 +83,7 @@
             header('location: categorias.php');
     }else{
         die("erro na query");
-    }
+     }
     }
 
 }

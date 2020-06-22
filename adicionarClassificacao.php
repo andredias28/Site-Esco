@@ -78,17 +78,6 @@ ob_start();
                 </select>
             </div>
             <div class="tabela">
-                <label>Email</label>
-                <select name="Email">
-                    <option></option>
-                    <?php while ($coluna = $irbuscaremail->fetch_assoc()){
-                        $teste = $coluna['email'];
-                        echo "<option value='$teste'>$teste</option>";
-                    }
-                    ?>
-                </select>
-            </div>
-            <div class="tabela">
             <label>Quem Avalia</label>
                 <select name="quem_Avalia">
                     <option></option>
@@ -120,31 +109,27 @@ ob_start();
 if(isset($_POST['salvar'])){
     $fornecedor = $_POST['fornecedor'];
     $servicos = $_POST['servico'];
-    $email = $_POST['Email'];
     $quemAvalia = $_POST['quem_Avalia'];
     $idEmpresa = mysqli_query($conn, "SELECT id_empresa FROM empresa WHERE nome_empresa = '".$fornecedor."'");
     $numero = mysqli_query($conn, "SELECT Numero_P FROM professoresadministracao WHERE nome = '".$quemAvalia."'");
     $servicoAv = mysqli_query($conn, "SELECT id_servico FROM servico WHERE descricao = '".$servicos."'");
-    $Email = mysqli_query($conn, "SELECT email FROM empresa WHERE email='".$email."'");
-    /* Resolução do problema de insereção*/    
+    /* Resolução do problema de insereção*/
         $rows= $idEmpresa->fetch_assoc();
         $numeros = $numero->fetch_assoc();
         $services = $servicoAv->fetch_assoc();
-        $Emailrow = $Email->fetch_assoc();
-        $avaliaFeita = "0";
-
-        $dt = new DateTime();
-        $dates = date('Y-m-d');
-       if($stmt = $conn->prepare("INSERT INTO avaliacao (data,avaliacaoFeita,Numero,id_empresa,id_servico) VALUES (?,?,?,?,?)")){
-            $stmt->bind_param("sssss", $dates,$avaliaFeita,$numeros['Numero_P'],$rows['id_empresa'], $services['id_servico']);
-            $stmt->execute();
-            header('location: avaliacaoAdmin.php');
-        if($stmt->error) die($stmt->error);
-            header('location: adicionarCategorias.php');
-        }else{
-        die("erro na query");
-        }
+        $avaliaFeita = 0;
+        $data = '2020-06-02';
+    if($stmt = $conn->prepare("INSERT INTO avaliacao(Numero,avaliacaoFeita,id_empresa,id_servico) VALUES (?,?,?,?)")){
+         $stmt->bind_param("ssss",$numeros['Numero_P'],$avaliaFeita,$rows['id_empresa'],$services['id_servico']);
+          $stmt->execute();
+          header('location: avaliacaoAdmin.php');
+      if($stmt->error) die($stmt->error);
+          header('location: avaliacaoAdmin.php');
+      }
+     else
+         {
+      die("erro na query");
+      }
         ob_enf_fluch();
-}
-
+    }
 ?>
