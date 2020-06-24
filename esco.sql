@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 15-Jun-2020 às 21:37
+-- Generation Time: 24-Jun-2020 às 15:30
 -- Versão do servidor: 10.1.36-MariaDB
 -- versão do PHP: 7.2.10
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `avaliacao` (
   `id_avaliacao` int(11) NOT NULL,
-  `data` date NOT NULL,
+  `data` date DEFAULT NULL,
   `satisfacao` varchar(50) DEFAULT NULL,
   `cumprimento` varchar(50) DEFAULT NULL,
   `naoConformidades` varchar(50) DEFAULT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE `avaliacao` (
   `satisfacaoAv` varchar(50) DEFAULT NULL,
   `cumprimentoAv` int(11) DEFAULT NULL,
   `naoConformidadesAv` int(11) DEFAULT NULL,
-  `avaliacaoFeita` int(11) NOT NULL,
+  `avaliacaoFeita` int(11) DEFAULT NULL,
   `Numero` int(11) NOT NULL,
   `id_empresa` int(11) NOT NULL,
   `id_servico` int(11) NOT NULL
@@ -50,8 +50,12 @@ CREATE TABLE `avaliacao` (
 --
 
 INSERT INTO `avaliacao` (`id_avaliacao`, `data`, `satisfacao`, `cumprimento`, `naoConformidades`, `categoria`, `classificacao`, `satisfacaoAv`, `cumprimentoAv`, `naoConformidadesAv`, `avaliacaoFeita`, `Numero`, `id_empresa`, `id_servico`) VALUES
-(1, '2020-06-08', '100%', 'Sempre', 'ocorreram mas sem impacto', 'A', 3, '4', 4, 3, 0, 100, 1, 1),
-(2, '2020-03-12', '80-99%', 'Frequentemente', 'não ocorreram', 'A', 3, '3', 3, 4, 1, 2, 2, 2);
+(1, '2020-06-17', '0-50%', 'Sempre', 'ocorreram mas sem impacto', 'B', 2, '1', 4, 3, 1, 100, 1, 1),
+(2, '2020-03-12', '80-99%', 'Frequentemente', 'não ocorreram', 'A', 3, '3', 3, 4, 1, 100, 2, 2),
+(10, '2020-06-19', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 100, 4, 4),
+(15, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2, 3, 7),
+(16, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 3, 4),
+(18, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 100, 5, 4);
 
 -- --------------------------------------------------------
 
@@ -142,7 +146,7 @@ INSERT INTO `professoresadministracao` (`Numero_P`, `nome`, `email`, `telemovel`
 (51, 'Ana Maria Marcelino da Cunha', 'anacunha@sefo.pt', '', 'esci', '1', 1, 1),
 (56, 'Ana Cristina Silva Martins', 'anamartins@sefo.pt', '', 'esco', '1', 1, 1),
 (91, 'Álvaro Miguel Ribeiro de Brito', 'alvarobrito@sefo.pt', '999', 'alvaro', '0', 2, 1),
-(100, 'Andre', 'andre3785@gmail.com', '', '123', '0', 1, 1),
+(100, 'André Dias', 'andre3785@gmail.com', '', '12', '0', 1, 1),
 (102, 'Paulo Sérgio Reis Moreira', 'psrmoreira@sefo.pt', '', 'esco', '1', 2, 1),
 (109, 'Ana Isabel Alves Barata Feio', 'anabaratafeio@sefo.pt', '', 'esco', '1', 2, 1),
 (110, 'Sandra Margarida da Silva Morais Franco', 'sandrafranco@sefo.pt', '', 'esco', '1', 1, 1),
@@ -261,7 +265,7 @@ ALTER TABLE `servico`
 -- AUTO_INCREMENT for table `avaliacao`
 --
 ALTER TABLE `avaliacao`
-  MODIFY `id_avaliacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_avaliacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `categoria`
