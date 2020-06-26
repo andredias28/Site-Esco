@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 24-Jun-2020 às 15:30
--- Versão do servidor: 10.1.36-MariaDB
--- versão do PHP: 7.2.10
+-- Tempo de geração: 26-Jun-2020 às 13:01
+-- Versão do servidor: 10.4.11-MariaDB
+-- versão do PHP: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `esco`
+-- Banco de dados: `esco`
 --
 
 -- --------------------------------------------------------
@@ -50,12 +50,14 @@ CREATE TABLE `avaliacao` (
 --
 
 INSERT INTO `avaliacao` (`id_avaliacao`, `data`, `satisfacao`, `cumprimento`, `naoConformidades`, `categoria`, `classificacao`, `satisfacaoAv`, `cumprimentoAv`, `naoConformidadesAv`, `avaliacaoFeita`, `Numero`, `id_empresa`, `id_servico`) VALUES
-(1, '2020-06-17', '0-50%', 'Sempre', 'ocorreram mas sem impacto', 'B', 2, '1', 4, 3, 1, 100, 1, 1),
-(2, '2020-03-12', '80-99%', 'Frequentemente', 'não ocorreram', 'A', 3, '3', 3, 4, 1, 100, 2, 2),
-(10, '2020-06-19', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 100, 4, 4),
-(15, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2, 3, 7),
-(16, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 3, 4),
-(18, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 100, 5, 4);
+(1, '2020-06-25', '100%', 'Frequentemente', 'ocorreram mas sem impacto', 'A', 3, '4', 3, 3, 0, 100, 1, 1),
+(23, '2020-06-25', '100%', 'Sempre', 'não ocorreram', 'A', 4, '4', 4, 4, 0, 109, 3, 2),
+(25, '2020-06-25', '80-99%', 'Frequentemente', 'não ocorreram', 'A', 3, '3', 3, 4, 0, 2, 5, 4),
+(26, '2020-06-25', '80-99%', 'Sempre', 'não ocorreram', 'A', 3, '3', 4, 4, 0, 102, 4, 4),
+(27, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 91, 1, 5),
+(28, '2020-06-25', '100%', 'Frequentemente', 'não ocorreram', 'A', 3, '4', 3, 4, 0, 109, 1, 6),
+(29, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 100, 2, 3),
+(30, '2020-06-25', '100%', 'Sempre', 'não ocorreram', 'A', 4, '4', 4, 4, 0, 100, 7, 9);
 
 -- --------------------------------------------------------
 
@@ -76,7 +78,8 @@ INSERT INTO `categoria` (`id_categoria`, `descricao_Cate`) VALUES
 (1, 'Comunicações'),
 (2, 'Segurança'),
 (3, 'Tansportes'),
-(4, 'Higiene');
+(4, 'Higien'),
+(7, 'Aluguer');
 
 -- --------------------------------------------------------
 
@@ -99,11 +102,12 @@ CREATE TABLE `empresa` (
 --
 
 INSERT INTO `empresa` (`id_empresa`, `nome_empresa`, `morada`, `email`, `codigoPostal`, `numeroTelemovel`, `id_servico`) VALUES
-(1, 'Vodafone', 'Rua António Alves Ferreira', 'vodafone@gmail.com', '2560-256', '808 918 191', 1),
+(1, 'Vodafone', 'Rua António Alves Ferreira', 'vodafone@gmail.com', '2506-666', '999 999 999', 1),
 (2, 'Kfogo', 'R. Dr. Afonso Oliveira Guimarães', 'geral@kfogo.pt', '2600-043', '925 678 717', 2),
 (3, 'DBG', 'Rua de S. Bento, N 24, Malpica do Tejo', 'administracao@dbg.pt', '6000-560', '263 696 969', 3),
 (4, 'Barraqueiro Transportes', 'Estrada Nacional nº8, Km 52 2565-641 Ramalhal, TVD', 'barraqueiro.oeste@rodest.pt', '2565-641', '261 334 150', 4),
-(5, 'Turispraia', 'R. Prof. Guilherme de Assunção 28, 2640-488 Mafra', 'turispraia@sapo.pt', '2640-488', '261 812 209', 4);
+(5, 'Turispraia', 'R. Prof. Guilherme de Assunção 28, 2640-488 Mafra', 'turispraia@sapo.pt', '2640-488', '261 812 209', 4),
+(7, 'ANESPO', ' R. Dr. Afonso Oliveira Guimarães', 'geral@anespo.pt', '2600-043', '256 656 465', 9);
 
 -- --------------------------------------------------------
 
@@ -141,16 +145,17 @@ INSERT INTO `professoresadministracao` (`Numero_P`, `nome`, `email`, `telemovel`
 (0, 'teste', 'andre3785@gmail.com', '12341924', '123', '1', 1, 1),
 (1, 'Júlia Maria Fernandes Alfaiate', 'juliaalfaiate@sefo.pt', '', 'esco', '1', 1, 1),
 (2, 'Admin', 'qualidade@sefo.pt', '999 999 999', 'admin123', '0', 1, 1),
-(9, 'Maria de Jesus Duarte Faustino', 'mariafaustino@sefo.pt', '', 'esci', '1', 1, 1),
+(9, 'Maria de Jesus Duarte Faustino', 'mariafaustino@sefo.pt', '', 'maria', '0', 1, 1),
 (28, 'Ana Teresa Pedreira da Silva M. Baptista', 'anabaptista@sefo.pt', '', 'esco', '1', 1, 1),
 (51, 'Ana Maria Marcelino da Cunha', 'anacunha@sefo.pt', '', 'esci', '1', 1, 1),
 (56, 'Ana Cristina Silva Martins', 'anamartins@sefo.pt', '', 'esco', '1', 1, 1),
+(60, 'Teste', 'teste@gmail.com', '', 'esco', '1', 1, 1),
 (91, 'Álvaro Miguel Ribeiro de Brito', 'alvarobrito@sefo.pt', '999', 'alvaro', '0', 2, 1),
-(100, 'André Dias', 'andre3785@gmail.com', '', '12', '0', 1, 1),
-(102, 'Paulo Sérgio Reis Moreira', 'psrmoreira@sefo.pt', '', 'esco', '1', 2, 1),
-(109, 'Ana Isabel Alves Barata Feio', 'anabaratafeio@sefo.pt', '', 'esco', '1', 2, 1),
-(110, 'Sandra Margarida da Silva Morais Franco', 'sandrafranco@sefo.pt', '', 'esco', '1', 1, 1),
-(113, 'Isabel Maria Marcelino da Cunha Garcia', 'isabelgarcia@sefo.pt', '', 'esco', '1', 2, 1),
+(100, 'André Dias', 'andre3785@gmail.com', '925 678 717', 'teste', '0', 1, 1),
+(102, 'Paulo Sérgio Reis Moreira', 'psrmoreira@sefo.pt', '', 'oi', '0', 2, 1),
+(109, 'Ana Isabel Alves Barata Feio', 'anabaratafeio@sefo.pt', '', '123', '0', 2, 1),
+(110, 'Sandra Margarida da Silva Morais Franco', 'sandrafranco@sefo.pt', '', '1', '0', 1, 1),
+(113, 'Isabel Maria Marcelino da Cunha Garcia', 'isabelgarcia@sefo.pt', '', '1', '0', 2, 1),
 (115, 'Helena Margarida da Silva Reis Neto', 'helenareis@sefo.pt', '', 'esco', '1', 2, 1),
 (120, 'Sandra da Luz Sales', 'sandrasales@sefo.pt', '', 'esci', '1', 2, 1),
 (122, 'Ana Luísa da Costa Serra Oliveira', 'anaoliveira@sefo.pt', '', 'esco', '1', 1, 1),
@@ -207,15 +212,14 @@ INSERT INTO `servico` (`id_servico`, `descricao`, `id_categoria`) VALUES
 (7, 'Carrinha', 3),
 (8, 'Limpeza', 4),
 (9, 'Luz', 2),
-(10, 'Jardinagem', 4),
-(11, 'Desinfestação', 4);
+(14, 'Sinalização', 2);
 
 --
--- Indexes for dumped tables
+-- Índices para tabelas despejadas
 --
 
 --
--- Indexes for table `avaliacao`
+-- Índices para tabela `avaliacao`
 --
 ALTER TABLE `avaliacao`
   ADD PRIMARY KEY (`id_avaliacao`),
@@ -224,20 +228,20 @@ ALTER TABLE `avaliacao`
   ADD KEY `id_ServicoAv` (`id_servico`);
 
 --
--- Indexes for table `categoria`
+-- Índices para tabela `categoria`
 --
 ALTER TABLE `categoria`
   ADD PRIMARY KEY (`id_categoria`);
 
 --
--- Indexes for table `empresa`
+-- Índices para tabela `empresa`
 --
 ALTER TABLE `empresa`
   ADD PRIMARY KEY (`id_empresa`),
   ADD KEY `id_servicoEmp` (`id_servico`) USING BTREE;
 
 --
--- Indexes for table `empresaservico`
+-- Índices para tabela `empresaservico`
 --
 ALTER TABLE `empresaservico`
   ADD PRIMARY KEY (`id_servico`,`id_empresa`),
@@ -245,48 +249,48 @@ ALTER TABLE `empresaservico`
   ADD KEY `id_servico` (`id_servico`);
 
 --
--- Indexes for table `professoresadministracao`
+-- Índices para tabela `professoresadministracao`
 --
 ALTER TABLE `professoresadministracao`
   ADD PRIMARY KEY (`Numero_P`);
 
 --
--- Indexes for table `servico`
+-- Índices para tabela `servico`
 --
 ALTER TABLE `servico`
   ADD PRIMARY KEY (`id_servico`),
   ADD KEY `id_categoriaServico` (`id_categoria`) USING BTREE;
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT for table `avaliacao`
+-- AUTO_INCREMENT de tabela `avaliacao`
 --
 ALTER TABLE `avaliacao`
-  MODIFY `id_avaliacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_avaliacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT for table `categoria`
+-- AUTO_INCREMENT de tabela `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `empresa`
+-- AUTO_INCREMENT de tabela `empresa`
 --
 ALTER TABLE `empresa`
-  MODIFY `id_empresa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_empresa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `servico`
+-- AUTO_INCREMENT de tabela `servico`
 --
 ALTER TABLE `servico`
-  MODIFY `id_servico` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_servico` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- Constraints for dumped tables
+-- Restrições para despejos de tabelas
 --
 
 --
