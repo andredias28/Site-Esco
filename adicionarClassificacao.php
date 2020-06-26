@@ -119,14 +119,14 @@ if(isset($_POST['salvar'])){
         $rows= $idEmpresa->fetch_assoc();
         $numeros = $numero->fetch_assoc();
         $services = $servicoAv->fetch_assoc();
-        $avaliaFeita = 0;
+        $avaliaFeita = 1;
         $data = '2020-06-02';
     if($stmt = $conn->prepare("INSERT INTO avaliacao(Numero,avaliacaoFeita,id_empresa,id_servico) VALUES (?,?,?,?)")){
          $stmt->bind_param("ssss",$numeros['Numero_P'],$avaliaFeita,$rows['id_empresa'],$services['id_servico']);
           $stmt->execute();
-          header('location: avaliacaoAdmin.php');
+          header('location: historico.php');
       if($stmt->error) die($stmt->error);
-        header('location: avaliacaoAdmin.php');
+        header('location: historico.php');
       }
      else
          {

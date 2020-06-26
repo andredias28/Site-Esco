@@ -23,9 +23,9 @@ if($conn->connect_error){
         $servico = mysqli_query($conn, "SELECT * FROM servico INNER JOIN categoria ON servico.id_categoria = categoria.id_categoria;");
         $professores = mysqli_query($conn,"SELECT * FROM professoresadministracao WHERE Ativo='1'");
         $categoria = mysqli_query($conn, "SELECT * FROM categoria;");
-        $historicoAvalia = mysqli_query($conn, "SELECT * FROM avaliacao INNER JOIN professoresadministracao ON avaliacao.Numero = professoresadministracao.Numero_P INNER JOIN empresa ON avaliacao.id_empresa = empresa.id_empresa  WHERE avaliacaoFeita='1';");
+        $historicoAvalia = mysqli_query($conn, "SELECT * FROM avaliacao INNER JOIN professoresadministracao ON avaliacao.Numero = professoresadministracao.Numero_P INNER JOIN empresa ON avaliacao.id_empresa = empresa.id_empresa INNER JOIN servico ON avaliacao.id_servico = servico.id_servico  WHERE avaliacaoFeita='0';");
         $empresaAv = mysqli_query($conn, "SELECT * FROM empresa INNER JOIN avaliacao ON empresa.id_empresa = avaliacao.id_empresa WHERE Numero = '$numeroProfessor' AND avaliacaoFeita='0';");
-        $avaliacao = mysqli_query($conn, "SELECT * FROM avaliacao INNER JOIN professoresadministracao ON avaliacao.Numero = professoresadministracao.Numero_P WHERE Numero_P = '$numeroProfessor' AND avaliacaoFeita = '0';");
+        $avaliacao = mysqli_query($conn, "SELECT * FROM avaliacao INNER JOIN professoresadministracao ON avaliacao.Numero = professoresadministracao.Numero_P INNER JOIN empresa ON avaliacao.id_empresa = empresa.id_empresa INNER JOIN servico ON avaliacao.id_servico = servico.id_servico  WHERE avaliacaoFeita='1' AND Numero_P = '$numeroProfessor';");
         $teste = mysqli_query($conn, "SELECT * FROM servico INNER JOIN avaliacao ON servico.id_servico = avaliacao.id_servico WHERE avaliacaoFeita='0';");
         $irbuscaremail = mysqli_query($conn, "SELECT email FROM empresa INNER JOIN servico ON empresa.id_servico = servico.id_servico;");
 

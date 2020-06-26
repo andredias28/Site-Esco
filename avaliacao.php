@@ -1,5 +1,12 @@
 <?php include('conexao.php');
 ob_start();
+
+if(empty($_SESSION['numero'])){
+    $numero = 0;
+}else{
+    $numero = $_SESSION['numero'];
+}
+
 ?>
 
 
@@ -58,10 +65,10 @@ ob_start();
             </tr>
         </thead>
         <tbody>
-                <?php while(($row = mysqli_fetch_array($empresaAv)) && ($rows = mysqli_fetch_array($avaliacao)) && ($servicos = mysqli_fetch_array($servico))){ ?> 
+                <?php while($rows = mysqli_fetch_array($avaliacao)){ ?>
                     <tr>
-                       <td><?php echo $row['nome_empresa']?></td>
-                       <td><?php echo $servicos['descricao']?></td>
+                       <td><?php echo $rows['nome_empresa']?></td>
+                       <td><?php echo $rows['descricao']?></td>
                        <td id="cumprimento">
                        <select name="cumprimento">
                             <option value="0"></option>
@@ -739,11 +746,13 @@ ob_start();
             echo $data;
             echo $id;
 
+            echo $numero;
 
             /* INSERIR NA BASE DE DADOS */
-                mysqli_query($conn, "UPDATE avaliacao SET data = '$data', satisfacao='$satisfacaoBd', cumprimento='$cumprimentoBd', naoConformidades='$naoConforBd',categoria='$categoria',classificacao='$classificacao',satisfacaoAv='$satisfacao',cumprimentoAv='$cumprimento',naoConformidadesAv='$naoConfor, avaliacaoFeita='1' WHERE id_avaliacao=$id");
+              mysqli_query($conn, "UPDATE avaliacao SET data = '$data', satisfacao='$satisfacaoBd', cumprimento='$cumprimentoBd', naoConformidades='$naoConforBd',categoria='$categoria',classificacao='$classificacao',satisfacaoAv='$satisfacao',cumprimentoAv='$cumprimento',naoConformidadesAv='$naoConfor', avaliacaoFeita='0' WHERE id_avaliacao=$id");
 
-                header('location: historico.php');
+                header('location: professoresinicial.php');
+                session_destroy();
                 ob_enf_fluch();
         }
         //header('location:professoresinicial.php');

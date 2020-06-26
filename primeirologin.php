@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="primeiro.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Nova palavra-passe</title>
+    <title>Primeiro Login</title>
 </head>
 <body>
 <div class="loginbox">
-        <h1>Esqueceu senha?</h1>
+        <h1>Primeiro Login</h1>
         <form method="post">
         <div class="textbox">
             <i class="fas fa-user"></i>
@@ -38,14 +38,13 @@
         $novapasse= mysqli_escape_string($conn,$_POST['novapasse']);
         $confirmapasse= mysqli_escape_string($conn,$_POST['confirmar']);
         $numero = mysqli_escape_string($conn,$_POST['numero']);
-
     }
     if(empty($novapasse) or empty($confirmapasse)){
         echo "Tem que preencher todos os campos";
     }
     else{
-        $up = "UPDATE professoresadministracao SET senha='$novapasse' AND primeiro='0'  WHERE Numero_P='$numero'";
-        $resultado = mysqli_query($conn,$up);
+        $up = "UPDATE professoresadministracao SET senha='$confirmapasse' WHERE Numero_P='$numero'";
+        $teste = mysqli_query($conn,$up);
         header('Location:paginainicio.html');
     }
 

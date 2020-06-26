@@ -27,9 +27,9 @@
        $mail->isHTML(true);
        $mail->Subject = 'Recuperar a palavra-passe';
        $mail->Body = 'Por razações de segurança foi mandado um link para o utilizador conseguir mudar a palavra passe, o link encontrasse na linha abaixo 
-        <br><br><br> link para mudar a passe: http://localhost/au/Site-Esco/Esqueceu.php';
+        <br><br><br> link para mudar a passe: http://localhost/Esco/Esqueceu.php';
        $mail->AltBody = 'Por razações de segurança foi mandado um link para o utilizador conseguir mudar a palavra passe, o link encontrasse na linha abaixo 
-        <br><br><br> link para mudar a passe: http://localhost/au/Site-Esco/Esqueceu.php';
+        <br><br><br> link para mudar a passe: http://localhost/Esco/Esqueceu.php';
        if($mail->send()){
            echo "O email foi enviado com sucesso";
            header('Location: login.php');
