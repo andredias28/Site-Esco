@@ -45,7 +45,7 @@ if(isset($_GET['editaCategoria'])) {
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="professores.php">Professores</a>
+                <a class="nav-link" href="professores.php">Utilizadores</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
@@ -62,7 +62,7 @@ if(isset($_GET['editaCategoria'])) {
 <!-- Fim do Header -->
 
 <div class="Texto">
-    <h1>Inserir Categoria</h1>
+    <h1>Alterar Categoria</h1>
 </div>
 
 <!-- Formulario -->
