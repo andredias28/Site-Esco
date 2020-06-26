@@ -47,7 +47,7 @@ if (isset($_GET['delete'])){
         }
         if(isset($_GET['deleteProf'])){
             $idProf = $_GET['deleteProf'];
-            mysqli_query($conn, "DELETE FROM professoresadministracao WHERE Numero_P = $idProf");
+            mysqli_query($conn, "UPDATE professoresadministracao SET Ativo = 0 WHERE Numero_P = $idProf");
             header('location: professores.php');
         }
 ?>

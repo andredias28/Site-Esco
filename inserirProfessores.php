@@ -36,7 +36,7 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="professores.php">Professores</a>
+                        <a class="nav-link" href="professores.php">Utilizador</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
@@ -82,7 +82,7 @@
                 <label>Perfil*</label>
                 <select name="Perfil">
                 <option></option>
-                <option>Professor</option>
+                <option>Utilizador</option>
                 <option>Administração</option>
                 </select>
             </div>
@@ -120,7 +120,7 @@
             if($senha != $confirmarSenha){
                 echo "<script type='text/javascript'>alert('A senha não é igual ao confirmar senha');</script>";
             }else{
-                if($perfil == 'Professor'){
+                if($perfil == 'Utilizador'){
                     $perfil = '2';
                 }else if($perfil == 'Administração'){
                     $perfil = '1';

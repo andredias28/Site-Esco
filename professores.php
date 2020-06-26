@@ -39,7 +39,7 @@ include('conexao.php');
             </li>
 <!-- Fim da DropDown -->
       <li class="nav-item">
-        <a class="nav-link disabled active" href="#">Professores</a>
+        <a class="nav-link disabled active" href="#">Utilizadores</a>
       </li>
       <li class="nav-item">
                         <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
@@ -55,7 +55,7 @@ include('conexao.php');
 </nav>
 
 <div class="Texto">
-        <h1>Professores</h1>
+        <h1>Utilizadores</h1>
     </div>
 </div>
 <a href="inserirProfessores.php"><button type="button" id="inserir">Inserir</button></a>
@@ -66,7 +66,7 @@ include('conexao.php');
                     <th>Numero</th>
                     <th>Nome</th>
                     <th>Email</th>
-                    <th>Eliminar</th>
+                    <th>Desativar</th>
                 </tr>
             </thead>
             <tbody>

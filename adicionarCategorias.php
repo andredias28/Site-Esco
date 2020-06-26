@@ -35,7 +35,7 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="professores.php">Professores</a>
+                        <a class="nav-link" href="professores.php">Utilizadores</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="avaliacaoAdmin.php">Avaliacao</a>
